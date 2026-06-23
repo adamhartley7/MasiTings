@@ -1,0 +1,1003 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Masi’s Notes — researched, fact-checked, answered</title><meta name="description" content="Five things Masi told Adam — on Spanish and Latin America, university research, EU grants, a head-bump report, and tutoring a 4-year-old — researched, fact-checked and answered."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"><style>
+:root{
+  --bg:#F6F1E8; --bg2:#FBF8F2; --card:#FFFFFF; --ink:#2A2620; --ink2:#6A6256; --line:rgba(40,34,24,.13);
+  --warm:#BC5A33; --gold:#B07A12; --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#15120D; --bg2:#1C1810; --card:#211C14; --ink:#ECE5D7; --ink2:#A99F8C; --line:rgba(236,229,215,.14); --warm:#E0855E;
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+a{color:var(--warm);text-decoration:none}
+a:hover{text-decoration:underline}
+h2,h3{font-weight:500;letter-spacing:-.01em}
+.wrap{max-width:920px;margin:0 auto;padding:0 22px}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--warm);z-index:60;transition:width .1s linear}
+
+/* hero */
+.hero{padding:78px 0 26px;text-align:center;position:relative}
+.hero .eyebrow{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink2);margin-bottom:20px}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(50px,11vw,104px);line-height:.95;margin:0;letter-spacing:-.02em}
+.hero h1 em{font-style:italic;color:var(--warm)}
+.hero .lede{font-size:clamp(18px,2.4vw,22px);color:var(--ink);max-width:640px;margin:26px auto 0;line-height:1.55}
+.hero .who{font-size:16px;color:var(--ink2);max-width:600px;margin:18px auto 0}
+.statbar{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:34px auto 0;max-width:680px}
+.statbar span{font-size:13px;color:var(--ink2);background:var(--bg2);border:1px solid var(--line);border-radius:100px;padding:7px 15px}
+.statbar span b{color:var(--ink);font-weight:500}
+.scrollcue{margin:40px auto 0;color:var(--ink2);font-size:13px;letter-spacing:.08em}
+
+/* nav */
+nav.pills{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav.pills .inner{max-width:920px;margin:0 auto;display:flex;gap:6px;padding:10px 16px;overflow-x:auto;scrollbar-width:none}
+nav.pills .inner::-webkit-scrollbar{display:none}
+nav.pills a{flex:0 0 auto;display:flex;align-items:center;gap:7px;font-size:14px;color:var(--ink2);padding:7px 13px;border-radius:100px;border:1px solid transparent;white-space:nowrap}
+nav.pills a .nav-n{font-variant-numeric:tabular-nums;font-size:11px;opacity:.6}
+nav.pills a:hover{color:var(--ink);text-decoration:none;background:var(--bg2)}
+nav.pills a.active{color:var(--ink);background:var(--card);border-color:var(--line)}
+
+/* note section */
+.note{padding:64px 0 30px;border-top:1px solid var(--line);scroll-margin-top:64px}
+.note-head{display:grid;grid-template-columns:auto auto 1fr;align-items:start;gap:16px}
+.note-num{font-family:var(--serif);font-size:46px;line-height:1;color:var(--acc);font-weight:500}
+.note-ico{width:34px;height:34px;color:var(--acc);margin-top:4px}
+.note-ico svg{width:34px;height:34px}
+.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);font-weight:500;margin-bottom:6px}
+.note-head h2{font-family:var(--serif);font-size:clamp(28px,4.4vw,40px);margin:0;line-height:1.08}
+.oneliner{color:var(--ink2);margin:12px 0 0;font-size:18px}
+
+.notecard{position:relative;margin:30px 0 8px;background:var(--bg2);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:10px;padding:20px 22px 18px}
+.notecard p{margin:0;font-family:var(--serif);font-style:italic;font-size:19px;line-height:1.5}
+.nc-tab{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);font-weight:500;margin-bottom:8px}
+
+.tldr{margin:26px 0;font-size:18.5px;line-height:1.62}
+.tldr-k{display:inline-block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);font-weight:600;margin-right:10px;vertical-align:1px}
+
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:24px 0}
+.fact{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 16px}
+.fact-v{font-family:var(--serif);font-size:23px;font-weight:500;color:var(--acc);line-height:1.1}
+.fact-l{font-size:14px;font-weight:500;margin-top:7px}
+.fact-n{font-size:12.5px;color:var(--ink2);margin-top:5px;line-height:1.45}
+
+/* viz shell */
+.viz{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:24px 22px;margin:26px 0}
+.viz-head{font-family:var(--serif);font-size:20px;font-weight:500;margin-bottom:16px}
+.viz-sub{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2);font-weight:600;margin:22px 0 12px}
+
+.tile-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+.mtile{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:13px 14px}
+.mt-v{font-family:var(--serif);font-size:24px;color:var(--acc);font-weight:500}
+.mt-l{font-size:13px;color:var(--ink2);margin-top:3px;line-height:1.35}
+.mt-l span{opacity:.75}
+
+.split2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.splitcard{border-radius:12px;padding:16px 17px;border:1px solid var(--line)}
+.splitcard.good{background:rgba(27,116,104,.10);border-color:rgba(27,116,104,.35)}
+.splitcard.warn{background:rgba(176,122,18,.12);border-color:rgba(176,122,18,.38)}
+.sc-k{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);font-weight:600}
+.sc-v{font-family:var(--serif);font-size:26px;font-weight:500;margin:4px 0 6px}
+.sc-n{font-size:14px;color:var(--ink2);line-height:1.45}
+
+.runway{display:flex;gap:8px}
+.rseg{flex:var(--w) 1 0;background:var(--card);border:1px solid var(--line);border-top:3px solid var(--acc);border-radius:8px;padding:12px 13px}
+.rs-t{font-size:13.5px;font-weight:600}
+.rs-d{font-size:12.5px;color:var(--ink2);margin-top:3px}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.chip{font-size:13px;background:var(--card);border:1px solid var(--line);border-radius:100px;padding:6px 13px;color:var(--ink)}
+
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.step{position:relative;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 14px 13px}
+.step.go{border-color:var(--acc);background:color-mix(in srgb,var(--acc) 9%,var(--card))}
+.step-n{display:inline-flex;width:24px;height:24px;border-radius:50%;background:var(--acc);color:#fff;align-items:center;justify-content:center;font-size:13px;font-weight:600;margin-bottom:9px}
+.step-t{display:block;font-size:14.5px;font-weight:600}
+.step-d{display:block;font-size:12.5px;color:var(--ink2);margin-top:3px;line-height:1.4}
+
+.routes{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.route{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:15px 14px}
+.ro-v{font-family:var(--serif);font-size:26px;color:var(--acc);font-weight:500}
+.ro-t{font-size:14.5px;font-weight:600;margin-top:2px}
+.ro-d{font-size:12.5px;color:var(--ink2);margin-top:5px;line-height:1.45}
+
+.mvr{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:12px}
+.mvr-card{border-radius:12px;padding:16px;border:1px solid var(--line);background:var(--card)}
+.mvr-card.myth{opacity:.85}
+.mvr-card.myth .mvr-v{text-decoration:line-through;text-decoration-color:var(--warm);text-decoration-thickness:2px}
+.mvr-card.rule{border-color:var(--acc);border-width:2px}
+.mvr-k{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);font-weight:600}
+.mvr-v{font-family:var(--serif);font-size:25px;font-weight:500;margin:5px 0 7px}
+.mvr-n{font-size:13.5px;color:var(--ink2);line-height:1.45}
+
+.bars{display:flex;flex-direction:column;gap:11px}
+.bar-row{display:grid;grid-template-columns:180px 1fr 48px;align-items:center;gap:12px}
+.bar-label{font-size:14px;color:var(--ink2)}
+.bar-track{height:14px;background:var(--card);border:1px solid var(--line);border-radius:100px;overflow:hidden}
+.bar-fill{height:100%;width:0;border-radius:100px;transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
+.reveal.in .bar-fill{width:var(--w)}
+.bar-val{font-variant-numeric:tabular-nums;font-weight:600;text-align:right;font-size:14px}
+
+.callout-mini{background:color-mix(in srgb,var(--acc) 8%,var(--card));border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:0 10px 10px 0;padding:13px 15px;font-size:14.5px;margin-top:14px;line-height:1.5}
+
+.ipflow{display:flex;align-items:stretch;gap:8px;flex-wrap:wrap}
+.ipnode{flex:1 1 150px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:13px}
+.ip-t{font-size:14.5px;font-weight:600}
+.ip-d{font-size:12.5px;color:var(--ink2);margin-top:4px;line-height:1.4}
+.iparrow{align-self:center;color:var(--acc);font-size:20px;font-weight:600}
+
+/* sofia report viz */
+.report-band{display:flex;align-items:center;justify-content:space-between;gap:14px;background:color-mix(in srgb,var(--acc) 12%,var(--card));border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:6px}
+.rb-k{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);font-weight:600}
+.rb-t{font-family:var(--serif);font-size:19px;font-weight:500;margin-top:2px}
+.printbtn{flex:0 0 auto;background:var(--card);border:1px solid var(--line);color:var(--ink);border-radius:9px;padding:9px 15px;font-size:13.5px;font-family:var(--sans);cursor:pointer}
+.printbtn:hover{border-color:var(--acc);color:var(--acc)}
+.xsection{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px;margin-bottom:10px}
+.xnote{font-size:14.5px;color:var(--ink2);line-height:1.55;margin:6px 2px 0}
+.bruise{display:flex;gap:6px}
+.bswatch{flex:1;border-radius:9px;padding:14px 8px 12px;text-align:center;min-width:0}
+.bswatch span{display:block;font-size:11.5px;opacity:.92}
+.bswatch b{display:block;font-size:14px;font-weight:600;margin-top:3px}
+.redflags{background:#fdeaea;border:2px solid #c63a3a;border-radius:14px;padding:18px 20px;margin:20px 0}
+@media (prefers-color-scheme:dark){.redflags{background:#3a1414;border-color:#e06363}}
+.rf-head{color:#a12626;font-weight:600;font-size:16.5px;line-height:1.4;margin-bottom:12px;display:flex;gap:9px;align-items:baseline}
+@media (prefers-color-scheme:dark){.rf-head{color:#f0a0a0}}
+.rf-mark{flex:0 0 auto;width:23px;height:23px;border-radius:50%;background:#c63a3a;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;align-self:center}
+.rf-list{margin:0;padding-left:20px;columns:2;column-gap:26px;font-size:14.5px;line-height:1.5}
+.rf-list li{margin-bottom:6px;break-inside:avoid}
+.rf-extra{margin-top:12px;font-size:14px;line-height:1.55;color:#7a2222}
+@media (prefers-color-scheme:dark){.rf-extra{color:#e8b4b4}}
+.homecare{background:rgba(27,116,104,.09);border:1px solid rgba(27,116,104,.32);border-radius:12px;padding:16px 18px;margin-top:14px}
+.hc-head{font-weight:600;font-size:15px;margin-bottom:10px;color:#15695e}
+@media (prefers-color-scheme:dark){.hc-head{color:#5fc3b3}}
+.hc-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.hc-item{font-size:14px;color:var(--ink2);line-height:1.45}
+.hc-item b{color:var(--ink)}
+.med-disc{margin-top:16px;font-size:13.5px;color:var(--ink2);font-style:italic;line-height:1.55;border-top:1px solid var(--line);padding-top:14px}
+
+/* tutoring viz */
+.sessbar{display:flex;gap:4px;height:70px}
+.ss{flex:var(--w) 1 0;background:var(--c);border-radius:8px;color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:4px;text-align:center;min-width:0}
+.ss-l{font-size:12.5px;font-weight:600;line-height:1.15}
+.ss-m{font-size:11px;opacity:.85;margin-top:3px}
+.split3{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+.pc-n{display:inline-flex;width:22px;height:22px;border-radius:50%;background:var(--acc);color:#fff;align-items:center;justify-content:center;font-size:12px;font-weight:600}
+.pc-t{display:block;font-size:14.5px;font-weight:600;margin-top:8px}
+.pc-d{display:block;font-size:12.5px;color:var(--ink2);margin-top:3px;line-height:1.4}
+
+/* deep dive */
+.deep{margin-top:30px}
+.block{margin:26px 0}
+.block h3{font-size:21px;margin:0 0 8px;color:var(--ink)}
+.block p{margin:0 0 12px}
+.ticks{list-style:none;margin:10px 0 0;padding:0}
+.ticks li{position:relative;padding-left:26px;margin-bottom:9px;font-size:15.5px;line-height:1.5;color:var(--ink)}
+.ticks li:before{content:"";position:absolute;left:2px;top:9px;width:8px;height:8px;border-radius:50%;background:var(--acc)}
+
+.actions{margin:32px 0}
+.actions h3{font-size:21px;margin:0 0 14px}
+.steplist{counter-reset:s;list-style:none;margin:0;padding:0}
+.steplist li{counter-increment:s;position:relative;padding:14px 16px 14px 52px;margin-bottom:10px;background:var(--card);border:1px solid var(--line);border-radius:11px;font-size:15.5px;line-height:1.5}
+.steplist li:before{content:counter(s);position:absolute;left:14px;top:13px;width:26px;height:26px;background:var(--acc);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13.5px;font-weight:600}
+
+.caveats{background:var(--bg2);border:1px solid var(--line);border-radius:13px;padding:20px 22px;margin:24px 0}
+.caveats h3{font-size:17px;margin:0 0 12px}
+.caveats ul{margin:0;padding-left:20px}
+.caveats li{font-size:14px;color:var(--ink2);line-height:1.55;margin-bottom:9px}
+.caveats.danger{background:#fdf2f2;border-color:#e7b9b9}
+@media (prefers-color-scheme:dark){.caveats.danger{background:#2a1818;border-color:#583030}}
+.caveats.danger li{color:#7a3a3a}
+@media (prefers-color-scheme:dark){.caveats.danger li{color:#d6a3a3}}
+
+.sources{margin:20px 0}
+.sources summary{cursor:pointer;font-size:14px;color:var(--ink2);font-weight:500;list-style:none;display:inline-flex;align-items:center;gap:8px;padding:8px 0}
+.sources summary:before{content:"+";color:var(--acc);font-weight:600}
+.sources[open] summary:before{content:"−"}
+.sources ul{margin:8px 0 0;padding-left:20px}
+.sources li{font-size:13.5px;margin-bottom:7px;line-height:1.45}
+
+.fcribbon{display:flex;align-items:center;gap:9px;flex-wrap:wrap;font-size:13px;color:var(--ink2);margin-top:18px;padding-top:16px;border-top:1px dashed var(--line)}
+.fc-dot{width:8px;height:8px;border-radius:50%;background:#2e9e6b;flex:0 0 auto}
+
+/* methodology + footer */
+.method{padding:64px 0 20px;border-top:1px solid var(--line)}
+.method h2{font-family:var(--serif);font-size:32px;margin:0 0 8px}
+.method .lede{color:var(--ink2);font-size:18px;margin:0 0 26px;max-width:680px}
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:20px 0}
+.fnode{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.fnode .fn-n{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--warm);font-weight:600}
+.fnode h4{margin:6px 0 5px;font-size:16px;font-weight:600}
+.fnode p{margin:0;font-size:13.5px;color:var(--ink2);line-height:1.5}
+.corrtable{width:100%;border-collapse:collapse;margin-top:18px;font-size:14px}
+.corrtable th,.corrtable td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+.corrtable th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);font-weight:600}
+.corrtable td.was{color:var(--ink2);text-decoration:line-through;text-decoration-thickness:1px}
+.corrtable td.now{color:var(--ink)}
+
+footer{padding:60px 0 80px;border-top:1px solid var(--line);text-align:center;margin-top:30px}
+footer .sig{font-family:var(--serif);font-style:italic;font-size:23px;line-height:1.5;max-width:560px;margin:0 auto 26px}
+footer .sig span{color:var(--warm)}
+footer .disc{font-size:13px;color:var(--ink2);max-width:620px;margin:0 auto 18px;line-height:1.6}
+footer .made{font-size:12.5px;color:var(--ink2);letter-spacing:.04em}
+
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.bar-fill{transition:none}}
+
+@media (max-width:680px){
+  body{font-size:16px}
+  .split2,.hc-grid{grid-template-columns:1fr}
+  .bar-row{grid-template-columns:120px 1fr 40px;gap:8px}
+  .rf-list{columns:1}
+  .runway,.ipflow{flex-direction:column}
+  .iparrow{transform:rotate(90deg)}
+  .note-head{grid-template-columns:auto 1fr;grid-template-areas:'num text' 'ico text'}
+  .note-ico{display:none}
+}
+@media print{
+  #progress,nav.pills,.scrollcue,.statbar,.printbtn{display:none!important}
+  body{background:#fff;color:#000;font-size:12pt}
+  .reveal{opacity:1;transform:none}
+  .note{page-break-inside:auto}
+  .viz,.notecard,.fact,.steplist li{break-inside:avoid}
+}
+</style></head><body><div id="progress"></div><h1 class="sr-only">Masi’s Notes: five pieces of advice and questions from Masi to Adam, each researched and fact-checked.</h1><header class="hero"><div class="wrap"><div class="eyebrow">For Masi · from Adam · 23 June 2026</div><h1>Masi’s <em>Notes</em></h1><p class="lede">Five things Masi told me one afternoon. I wrote each one down in my phone — then researched it, fact-checked it, and turned them into this.</p><p class="who">Masi — Mastoureh Fathi — is a close family friend: like an aunt to me, a dear friend to my mum, and a quietly maternal presence in my life. This is a small thank-you for advice worth taking seriously.</p><div class="statbar"><span><b>5</b> notes</span><span><b>10</b> research agents</span><span><b>100</b> web searches</span><span>every claim <b>fact-checked</b></span><span><b>Opus 4.8</b> · ultracode</span></div><div class="scrollcue">↓ five notes below</div></div></header><nav class="pills"><div class="inner"><a href="#note-1" data-target="note-1"><span class="nav-n">01</span>Spanish</a><a href="#note-2" data-target="note-2"><span class="nav-n">02</span>Universities</a><a href="#note-3" data-target="note-3"><span class="nav-n">03</span>EU grants</a><a href="#note-4" data-target="note-4"><span class="nav-n">04</span>Sofia</a><a href="#note-5" data-target="note-5"><span class="nav-n">05</span>Tutoring</a></div></nav><main class="wrap"><section class="note" id="note-1" style="--acc:#B07A12">
+<div class="note-head reveal">
+<div class="note-num">01</div>
+<div class="note-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.7 2.6 15.3 0 18M12 3c-2.6 2.7-2.6 15.3 0 18"/></svg></div>
+<div class="note-headtext">
+<div class="kicker">Economics &amp; opportunity</div>
+<h2>Spanish as a Business Cheat Code for Latin America</h2>
+<p class="oneliner">Masi told Adam to learn Spanish to unlock the South American market as a place of economic opportunity.</p>
+</div></div>
+<div class="notecard reveal"><div class="nc-tab">Masi said</div><p>&ldquo;Learn Spanish to get access to the South American market — it is a great place of opportunity for economics.&rdquo;</p></div>
+<div class="tldr reveal"><span class="tldr-k">In short</span>Masi is right, and the timing is good. Spanish unlocks a young, fast-digitizing market of roughly 400 million people across ~18 Latin American countries with a regional economy near $7 trillion, booming fintech, e-commerce growing past $769B, and a 2.3M-strong developer talent pool that US companies are hiring through nearshoring. The honest caveat: the single largest economy, Brazil (~$2.3T), speaks Portuguese, not Spanish — so Spanish covers most of the continent but not all of it. For a builder like Adam, Spanish is realistically ~600-750 hours to professional fluency (FSI Category 1, the easiest tier for an English speaker), and it pays off in trust, hiring, and customer reach long before you're "fluent."</div>
+<div class="facts reveal">
+<div class="fact"><div class="fact-v">~636M total (~520M native)</div><div class="fact-l">Spanish speakers worldwide</div><div class="fact-n">Instituto Cervantes 2025 report; 3rd most-spoken mother tongue after Mandarin and Hindi; learners up 79% in a decade</div></div>
+<div class="fact"><div class="fact-v">~400M across ~18 countries</div><div class="fact-l">Spanish speakers in LatAm</div><div class="fact-n">~210M in South America alone; Spanish is the most-spoken language on the continent</div></div>
+<div class="fact"><div class="fact-v">~$7.0 trillion</div><div class="fact-l">LatAm combined GDP</div><div class="fact-n">South America is ~55–60% of the Latin America &amp; Caribbean total</div></div>
+<div class="fact"><div class="fact-v">~$2.3T, ~215M people</div><div class="fact-l">Brazil (the Portuguese caveat)</div><div class="fact-n">Largest LatAm economy — but ~99.5% speak Portuguese, NOT Spanish</div></div>
+<div class="fact"><div class="fact-v">~$769B, +21% YoY</div><div class="fact-l">E-commerce 2025</div><div class="fact-n">World's fastest-growing e-commerce region; &gt;$1T projected by 2027</div></div>
+<div class="fact"><div class="fact-v">~$48.7B (2026) → ~$240B by 2035</div><div class="fact-l">Fintech market</div><div class="fact-n">Absorbed ~61% of regional tech VC 2020-2024; Nubank is the world's most valuable neobank</div></div>
+<div class="fact"><div class="fact-v">2.3M+ engineers, ~58% cheaper</div><div class="fact-l">Dev talent pool</div><div class="fact-n">Senior engineers vs US cost; US nearshoring FDI surging (e.g. Monterrey +112% in 5 yrs)</div></div>
+<div class="fact"><div class="fact-v">~600-750 hrs to pro fluency</div><div class="fact-l">Time to learn Spanish</div><div class="fact-n">FSI Category 1 — the easiest tier for English speakers; ~250-350 hrs for conversational</div></div>
+</div>
+<div class="viz reveal">
+<div class="viz-head">The opportunity, by the numbers</div>
+<div class="tile-row">
+  <div class="mtile"><div class="mt-v">~$7.0T</div><div class="mt-l">Regional GDP <span>(LatAm &amp; Caribbean)</span></div></div>
+  <div class="mtile"><div class="mt-v">$769B</div><div class="mt-l">E-commerce in 2025 <span>(+21% YoY)</span></div></div>
+  <div class="mtile"><div class="mt-v">2.3M+</div><div class="mt-l">Developers <span>(~58% cheaper)</span></div></div>
+  <div class="mtile"><div class="mt-v">636M</div><div class="mt-l">Spanish speakers <span>(worldwide)</span></div></div>
+</div>
+<div class="split2">
+  <div class="splitcard good">
+    <div class="sc-k">Spanish unlocks</div>
+    <div class="sc-v">~400M people</div>
+    <div class="sc-n">~18 countries — Mexico, Colombia, Chile, Argentina, Peru and most of South America.</div>
+  </div>
+  <div class="splitcard warn">
+    <div class="sc-k">The honest gap</div>
+    <div class="sc-v">Brazil</div>
+    <div class="sc-n">~$2.3T and ~215M people — but it speaks Portuguese, not Spanish. (Easier to add later.)</div>
+  </div>
+</div>
+<div class="viz-sub">A realistic learning runway</div>
+<div class="runway">
+  <div class="rseg" style="--w:33%"><div class="rs-t">Phase 1 · 0–3 mo</div><div class="rs-d">~150 hrs · habit + basics</div></div>
+  <div class="rseg" style="--w:34%"><div class="rs-t">Phase 2 · 3–9 mo</div><div class="rs-d">~250 hrs · input + speaking</div></div>
+  <div class="rseg" style="--w:33%"><div class="rs-t">Phase 3 · 9–18 mo</div><div class="rs-d">~250 hrs · immersion + real work</div></div>
+</div>
+<div class="chips">
+  <span class="chip">Fintech ($48.7B)</span><span class="chip">E-commerce</span><span class="chip">Nearshore dev talent</span>
+  <span class="chip">Lithium &amp; copper</span><span class="chip">Clean energy (65%)</span><span class="chip">Edtech</span>
+</div>
+</div>
+<div class="deep">
+<div class="block reveal"><h3>Why the opportunity is real (and current)</h3>
+<p>Latin America's combined nominal GDP is roughly <strong>$7.0 trillion</strong>, with South America making up roughly 55–60% of that output (the rest is Mexico, Central America and the Caribbean). It's not a poor backwater story — it's a digitizing, young, mobile-first consumer block. Internet penetration now exceeds <strong>84%</strong>, there are around <strong>290-300 million online shoppers</strong>, and the working-age population (15-64) is 60-70% of the total in the big economies. That demographic profile — young, connected, increasingly middle-class — is exactly the wedge that made e-commerce and fintech explode.</p><p>The growth is sectoral and specific, not vague optimism: fintech, e-commerce, software/nearshoring, and the critical-minerals + renewables complex are all compounding at once.</p>
+<ul class="ticks">
+<li>Regional GDP ~$7.0T (Latin America &amp; Caribbean); South America is ~55–60% of it</li>
+<li>Internet penetration &gt;84%, ~290M e-commerce users</li>
+<li>Working-age share 60-70% in Brazil/Mexico/Argentina/Chile</li>
+<li>ECLAC projects regional growth of ~2.4% (2025) and ~2.3% (2026) — steady, not spectacular, but the digital sectors grow far faster</li>
+</ul>
+</div>
+<div class="block reveal"><h3>The hot sectors a builder should care about</h3>
+<p>Adam builds web apps and learning tools, so the sectors that matter most are the ones where software is the product or the enabler.</p><p><strong>Fintech</strong> is the standout. The LatAm fintech market is ~$48.7B (2026) and forecast by one bullish projection to hit ~$240B by 2035 (other forecasters are lower), absorbing roughly <strong>61% of all regional tech VC</strong> in 2020-2024 because huge populations were unbanked and legacy banks left gaps. Nubank became the <strong>largest neobank outside Asia</strong> (and the world's most valuable), with ~62% of Brazilian adults holding an account.</p><p><strong>E-commerce</strong> hit <strong>~$769B in 2025 (+21% YoY)</strong> and is on track to pass $1 trillion by 2027 — LatAm is again the world's fastest-growing e-commerce region.</p><p><strong>Software talent / nearshoring</strong> is the most directly actionable for Adam: a <strong>2.3M+ developer talent pool</strong> with <strong>~58% cost savings on senior engineers vs. the US</strong>, in compatible time zones. US firms are pouring nearshoring FDI into hubs like Monterrey (112% tech-workforce growth over five years).</p><p><strong>Mining &amp; energy</strong> is the macro tailwind: the Lithium Triangle (Argentina, Bolivia, Chile) holds ~<strong>50% of the world's lithium resources</strong>; Chile + Peru produce ~35% of global copper; and the region already generates <strong>65% of its electricity from clean sources</strong> (vs. 43% globally), with a 200+ project green-hydrogen pipeline.</p>
+<ul class="ticks">
+<li>Fintech: ~$48.7B market (2026) → ~$240B by 2035; Nubank is the largest neobank outside Asia</li>
+<li>E-commerce: ~$769B in 2025, +21% YoY, &gt;$1T by 2027</li>
+<li>Nearshoring: 2.3M+ devs, ~58% cheaper senior engineers, US-aligned time zones</li>
+<li>Critical minerals: ~50% of global lithium resources, ~35% of global copper</li>
+<li>Energy: 65% clean electricity already; green-hydrogen export ambitions in Chile, Colombia, Brazil</li>
+</ul>
+</div>
+<div class="block reveal"><h3>The key nuance: Spanish ≠ all of South America (Brazil)</h3>
+<p>This is the part to be honest about. Spanish unlocks most of Hispanic Latin America — <strong>Argentina, Colombia, Chile, Peru, Ecuador, Bolivia, Uruguay, Paraguay, Venezuela</strong>, plus Mexico and Central America — roughly <strong>400 million Spanish speakers</strong> across the region. In South America specifically, Spanish edges out Portuguese with ~210 million speakers.</p><p>But <strong>Brazil — the single largest economy in Latin America (~$2.3T, ~215 million people) — speaks Portuguese</strong>, and ~99.5% of Brazilians speak it as a first language. So Spanish gives you the <em>majority of countries</em> and a <em>huge share of people</em>, but it does <strong>not</strong> give you the biggest national market. The good news: Spanish and Portuguese are close cousins. Once you're solid in Spanish, Portuguese becomes dramatically easier to add later — Spanish is the right first move, not a dead end.</p>
+<ul class="ticks">
+<li>Spanish covers ~18 countries and ~400M people in LatAm</li>
+<li>Brazil (~$2.3T, ~215M) is Portuguese — the one big market Spanish doesn't unlock</li>
+<li>Mexico (~$1.86T) IS Spanish-speaking — often the most practical first beachhead</li>
+<li>Spanish → Portuguese later is a short hop; learning Spanish first is strictly the better sequence</li>
+</ul>
+</div>
+<div class="block reveal"><h3>How Spanish actually gives a business edge</h3>
+<p>Language isn't just translation — in LatAm business culture it's the entry fee for trust. Concretely for Adam:</p><p><strong>Hiring &amp; managing dev talent.</strong> The nearshoring boom means Adam can hire senior engineers at ~58% of US cost. Being able to interview, onboard, and build rapport in Spanish massively widens the pool and improves retention vs. English-only founders competing for the same people.</p><p><strong>Relationships &amp; negotiation.</strong> Deals, partnerships, and investor conversations move on personal trust. Speaking the language signals long-term commitment and gets you past the 'foreigner doing a smash-and-grab' filter.</p><p><strong>Product &amp; support reach.</strong> Spanish-language UX, support, and content open ~400M users. Most global SaaS still treats Spanish LatAm as an afterthought — that's the gap a Spanish-speaking builder can exploit.</p><p><strong>Learning-tools angle specifically.</strong> Adam builds learning tools — and 'learning Spanish/English' and edtech is itself one of the largest LatAm digital-product categories, with a young population hungry for upskilling. He can dogfood his own journey into a product.</p>
+<ul class="ticks">
+<li>Wider, cheaper, stickier engineering hires via nearshoring</li>
+<li>Trust and negotiation leverage that English-only competitors lack</li>
+<li>~400M-user addressable market for Spanish-first product, support, and content</li>
+<li>Edtech / language-learning is itself a prime LatAm vertical for his learning tools</li>
+</ul>
+</div>
+<div class="block reveal"><h3>A practical, fun learning plan for a busy builder</h3>
+<p>Spanish is <strong>FSI Category 1</strong> — the <em>easiest</em> tier for English speakers — estimated at <strong>~600-750 class hours to professional working fluency (S-3/R-3)</strong>. Useful conversational ability comes much sooner, often in the <strong>250-350 active-hour</strong> range. The trick for a busy founder is daily consistency + comprehensible input, not cramming grammar.</p><p>A realistic ramp:</p><p><strong>Phase 1 (0-3 months, ~150 hrs): foundation + habit.</strong> 20-30 min/day on an app (Duolingo/Busuu for streaks, Anki for vocab), plus a weekly 1:1 tutor on iTalki (~$5-10/hr, often a LatAm native — relationship + practice in one). Milestone: order food, introduce yourself, survive small talk.</p><p><strong>Phase 2 (3-9 months, ~250 hrs): comprehensible input + speaking.</strong> Shift weight to <em>understanding real Spanish</em> — Dreaming Spanish (graded video input), LatAm podcasts, Spanish-dubbed shows. Switch your phone to Spanish. Do 2-3 tutor sessions/week. Milestone: hold a 20-minute call, read product copy, handle a support email.</p><p><strong>Phase 3 (9-18 months, ~250+ hrs): business immersion.</strong> Join LatAm founder/dev communities in Spanish, take a 2-4 week immersion trip (Medellín, Mexico City, and Buenos Aires are popular, cheap-ish, founder-friendly). Start doing real work — hiring calls, customer interviews — in Spanish. Milestone: negotiate, interview an engineer, run a meeting.</p>
+<ul class="ticks">
+<li>Target: ~600-750 hrs to pro fluency; ~250-350 hrs to solid conversation (FSI Cat 1)</li>
+<li>Daily 20-30 min app habit + weekly iTalki native tutor from day one</li>
+<li>Lean hard on comprehensible input (Dreaming Spanish, podcasts, dubbed shows)</li>
+<li>Switch phone/devices to Spanish for free passive immersion</li>
+<li>Plan a 2-4 week immersion trip once you hit conversational — Medellín / CDMX / Buenos Aires</li>
+<li>Make it real early: do hiring and customer calls in Spanish before you feel 'ready'</li>
+</ul>
+</div>
+</div>
+<div class="actions reveal"><h3>What to do next</h3><ol class="steplist">
+<li>Start a daily 20-30 min Spanish habit this week (app + Anki) and book a recurring weekly iTalki tutor who is a LatAm native — relationship-building and practice in one.</li>
+<li>Pick a beachhead country to orient toward: Mexico (~$1.86T, Spanish, closest to US) or Colombia/Chile for the dev-talent and startup scenes.</li>
+<li>Within ~3 months, shift toward comprehensible input (Dreaming Spanish, LatAm podcasts) and switch your phone's language to Spanish for free passive immersion.</li>
+<li>Treat Spanish as a hiring tool: explore nearshore engineering hiring (~58% cost savings) and do at least one candidate or customer-discovery call in Spanish once conversational.</li>
+<li>Plan a 2-4 week immersion trip (Medellín, Mexico City, or Buenos Aires) once you can hold a 20-minute conversation — it compresses months of progress.</li>
+<li>Build your own learning journey into your product: an edtech/language-learning tool aimed at LatAm is both a real market and a dogfooding opportunity.</li>
+<li>Keep Brazil/Portuguese on the roadmap as a <em>phase two</em> — Spanish first makes Portuguese far easier to add for the one big market it doesn't cover.</li>
+</ol></div>
+<div class="caveats reveal"><h3>Worth keeping in mind</h3><ul>
+<li>Currency &amp; inflation risk is real, especially Argentina: monthly inflation peaked at 25.5% (Dec 2023) and, despite Milei's reforms cooling it to ~2% monthly by late 2025, annual inflation still ended 2025 around 31.5% with a near currency run in Sept-Oct 2025 staved off only by a US Treasury intervention. Price in FX volatility; consider invoicing/holding USD and hedging.</li>
+<li>Political instability and policy whiplash vary widely by country — Venezuela and Bolivia carry the most risk; Chile, Uruguay, and Colombia are comparatively stable. Don't treat 'LatAm' as one uniform market; diligence each country separately.</li>
+<li>The Brazil/Portuguese gap is structural: Spanish does NOT unlock the single largest economy. If Brazil is core to your plan, budget for Portuguese later (easier after Spanish) or English-first partners.</li>
+<li>Mining/lithium upside is real but cyclical — falling lithium prices already paused major Chile projects (BYD, Tsingshan) in 2025, and water/environmental and community-rights concerns create regulatory risk.</li>
+<li>'Fluency in X hours' figures are idealized. FSI's 600-750 hours assumes structured classroom study; real-world progress depends on consistency and speaking practice, not app streaks alone. Expect a slower curve if you skip real conversation.</li>
+<li>Macro growth is modest (~2.4%) — the opportunity is in fast-growing digital sectors, not the broad economy. Target fintech, e-commerce, SaaS, and dev talent rather than betting on overall GDP.</li>
+</ul></div>
+<details class="sources reveal"><summary>Sources &amp; further reading (13)</summary><ul>
+<li><a href="https://observatoriodelespanol.cervantes.org/wp-content/uploads/2025/10/Spanish_a_language_to_the_world_2025.pdf" target="_blank" rel="noopener">Instituto Cervantes 2025 — Spanish: A Language to the World (report)</a></li>
+<li><a href="https://www.theolivepress.es/spain-news/2025/11/16/spanish-surges-to-636-million-speakers-worldwide/" target="_blank" rel="noopener">Spanish surges to 636 million speakers worldwide</a></li>
+<li><a href="https://www.cepal.org/en/pressreleases/eclac-updates-growth-projections-latin-america-and-caribbean-expansion-24-expected" target="_blank" rel="noopener">ECLAC growth projections for Latin America (2.4% in 2025)</a></li>
+<li><a href="https://www.statista.com/statistics/802640/gross-domestic-product-gdp-latin-america-caribbean-country/" target="_blank" rel="noopener">Statista — GDP in Latin America &amp; Caribbean by country</a></li>
+<li><a href="https://www.svb.com/industry-insights/fintech/latam-emerging-as-a-global-leader-in-fintech/" target="_blank" rel="noopener">SVB — Latin America emerging as a global leader in fintech</a></li>
+<li><a href="https://www.emarketer.com/content/latin-america-ecommerce-forecast-2025-growth-outlook-argentina-brazil-mexico" target="_blank" rel="noopener">eMarketer — Latin America fastest-growing ecommerce market (2025)</a></li>
+<li><a href="https://devsdata.com/nearshore-software-development-latin-america-top-countries/" target="_blank" rel="noopener">DevsData — Nearshore software development in Latin America</a></li>
+<li><a href="https://alcor.com/tech-hubs-in-latin-america/" target="_blank" rel="noopener">Alcor — Top tech hubs in Latin America 2026-2027</a></li>
+<li><a href="https://www.fidh.org/en/issues/business-human-rights-environment/lithium-triangle-scramble-transition-minerals-endangers-human-rights-south-america" target="_blank" rel="noopener">FIDH — Lithium Triangle and transition minerals</a></li>
+<li><a href="https://ember-energy.org/countries-and-regions/latin-america-and-caribbean/" target="_blank" rel="noopener">Ember — Latin America &amp; Caribbean clean electricity (65%)</a></li>
+<li><a href="https://www.piie.com/blogs/realtime-economics/2026/argentinas-fragile-monetary-framework-risks-renewed-volatility" target="_blank" rel="noopener">PIIE — Argentina's fragile monetary framework / FX volatility</a></li>
+<li><a href="https://www.tomedes.com/translator-hub/languages-south-america" target="_blank" rel="noopener">Tomedes — Languages of South America (Spanish vs Portuguese)</a></li>
+<li><a href="https://www.fsi-language-courses.org/blog/fsi-language-difficulty/" target="_blank" rel="noopener">FSI Language Difficulty Rankings (Category 1 / ~600-750 hrs)</a></li>
+</ul></details>
+<div class="fcribbon reveal"><span class="fc-dot"></span>Independently fact-checked · verdict <strong>high</strong> · corrections folded in · <a href="notes/01-spanish-south-american-market.md">read the full brief</a></div>
+</section>
+<section class="note" id="note-2" style="--acc:#1B7468">
+<div class="note-head reveal">
+<div class="note-num">02</div>
+<div class="note-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2 9l10 5 10-5-10-5Z"/><path d="M6 11v5c0 1.2 2.9 2.6 6 2.6s6-1.4 6-2.6v-5"/><path d="M22 9v5"/></svg></div>
+<div class="note-headtext">
+<div class="kicker">Credibility &amp; growth</div>
+<h2>The University Research Niche: How Academic Collaboration Builds a Credible Company</h2>
+<p class="oneliner">Masi advised Adam to niche into research collaborations with universities, because co-authored academic work makes both the paper and the company more credible.</p>
+</div></div>
+<div class="notecard reveal"><div class="nc-tab">Masi said</div><p>&ldquo;A good niche to get into is working with universities for research; it is better for the paper and for the university to be involved with a company, and would establish yourself as a credible company.&rdquo;</p></div>
+<div class="tldr reveal"><span class="tldr-k">In short</span>Partnering with universities is one of the highest-leverage credibility moves a young founder can make: a co-authored peer-reviewed paper, an academic name on your work, and access to university labs/talent all signal real validation to investors and customers. In the UK there is a dense, government-funded scaffolding for exactly this — Knowledge Transfer Partnerships (KTPs), CASE/iCASE PhD studentships, Catapult centres, and Innovate UK grants — much of which is designed to subsidise small companies working with academics. The way in is concrete: find a relevant academic, go through the university's Technology Transfer Office (TTO) or business-engagement team, scope a small project, sign an NDA and a research agreement (use the Lambert Toolkit as a template), and agree IP up front. The main caveats are slow timelines, IP negotiation, and full-economic-cost overheads — manage expectations and start small.</div>
+<div class="facts reveal">
+<div class="fact"><div class="fact-v">~67% funded</div><div class="fact-l">KTP grant rate (SME)</div><div class="fact-n">Innovate UK funds ~two-thirds of KTP project cost for SMEs; the business pays the rest</div></div>
+<div class="fact"><div class="fact-v">~£8,500 / month</div><div class="fact-l">KTP project cost</div><div class="fact-n">Typical total eligible cost; partly Innovate UK, partly business-paid, over 12-36 months</div></div>
+<div class="fact"><div class="fact-v">9 centres</div><div class="fact-l">Catapult centres</div><div class="fact-n">Innovate UK network; any UK business can access facilities, kit and experts</div></div>
+<div class="fact"><div class="fact-v">min. ~12 weeks</div><div class="fact-l">iCASE placement</div><div class="fact-n">Required in-company placement for an iCASE PhD student, alongside joint supervision</div></div>
+<div class="fact"><div class="fact-v">7 + 4 model agreements</div><div class="fact-l">Lambert Toolkit</div><div class="fact-n">7 one-to-one collaboration + 4 consortium templates to speed IP negotiation (English law)</div></div>
+<div class="fact"><div class="fact-v">~22 : 1</div><div class="fact-l">SME-to-academic ratio</div><div class="fact-n">~5.5m UK SMEs vs ~245k academics — capacity is scarce, so be an easy partner</div></div>
+<div class="fact"><div class="fact-v">~EUR 593m call</div><div class="fact-l">MSCA Doctoral Networks</div><div class="fact-n">EU Horizon Europe; funds company-university PhD consortia; next call opens 2026</div></div>
+<div class="fact"><div class="fact-v">REF impact case</div><div class="fact-l">Key benefit to academics</div><div class="fact-n">Real-world impact from collaboration drives UK university funding and prestige</div></div>
+</div>
+<div class="viz reveal">
+<div class="viz-head">Your way in — five steps</div>
+<div class="steps">
+  <div class="step"><span class="step-n">1</span><span class="step-t">Find the academic</span><span class="step-d">Whose papers match your problem</span></div>
+  <div class="step"><span class="step-n">2</span><span class="step-t">Go through the TTO</span><span class="step-d">Business-engagement office brokers it</span></div>
+  <div class="step"><span class="step-n">3</span><span class="step-t">Scope a tiny project</span><span class="step-d">Feasibility study, not a 3-year ask</span></div>
+  <div class="step"><span class="step-n">4</span><span class="step-t">NDA + agreement</span><span class="step-d">Use the Lambert Toolkit template</span></div>
+  <div class="step go"><span class="step-n">5</span><span class="step-t">KTP / grant</span><span class="step-d">→ a co-authored paper = credibility</span></div>
+</div>
+<div class="viz-sub">Funded routes worth knowing by name</div>
+<div class="routes">
+  <div class="route"><div class="ro-v">~67%</div><div class="ro-t">KTP</div><div class="ro-d">grant-funded for SMEs; embed a graduate + academic 1–3 yrs (~£8,500/mo)</div></div>
+  <div class="route"><div class="ro-v">12 wks</div><div class="ro-t">iCASE PhD</div><div class="ro-d">jointly-supervised PhD with an in-company placement</div></div>
+  <div class="route"><div class="ro-v">9</div><div class="ro-t">Catapults</div><div class="ro-d">any UK business can access world-class labs &amp; experts</div></div>
+  <div class="route"><div class="ro-v">£</div><div class="ro-t">Contract research</div><div class="ro-d">pay for a defined project — fastest, most flexible route</div></div>
+</div>
+</div>
+<div class="deep">
+<div class="block reveal"><h3>Why this builds credibility (the core of Masi's point)</h3>
+<p>Masi is right that involving a university helps <em>both</em> the paper and the company. The mechanism is <strong>signalling</strong>. A young company has no track record, so investors and customers look for cheap, hard-to-fake signals of quality. An academic co-author, a peer-reviewed publication, or a named university partner is exactly that: external parties have, in effect, staked their reputation on your work surviving scrutiny.</p><p>The research literature backs this directly. When a startup partners with a reputable university, the partnership 'reassures potential clients or investors,' and research papers act as 'external validation' that funders find attractive. Where a university takes a stake or formally collaborates, it provides 'a certification of the scientific and technological standing of the new venture.' Partner credibility is a core component of trust — it signals to customers that you can be relied on.</p><p>Concretely, a university collaboration gives a founder: (1) <strong>co-authored peer-reviewed papers</strong> — durable, citable proof your method works; (2) <strong>academic validation</strong> — a professor's name de-risks you in the eyes of a buyer or VC; (3) <strong>access to specialised equipment/labs</strong> you could never afford to buy; (4) a <strong>talent pipeline</strong> — PhDs and postdocs who already understand your problem; (5) <strong>grant eligibility</strong> — many UK/EU schemes only fund company+university consortia; and (6) <strong>investor/customer signalling</strong> — 'we are working with [University] on this' is a line that opens doors.</p>
+<ul class="ticks">
+<li>Peer-reviewed co-authorship = hard-to-fake proof of technical validity</li>
+<li>An academic partner's reputation transfers credibility to an unknown company</li>
+<li>University involvement can act as a 'certification' of scientific standing to investors</li>
+<li>Many grant schemes are only open to company-university consortia</li>
+</ul>
+</div>
+<div class="block reveal"><h3>The UK mechanisms — the funded scaffolding you should know by name</h3>
+<p>The UK has an unusually rich, government-subsidised set of routes. These are the ones a founder should be able to name:</p><p><strong>Knowledge Transfer Partnerships (KTPs)</strong> — the flagship. A three-way partnership between your business, a university ('knowledge base'), and a recently-qualified graduate ('KTP Associate') embedded in your company for 12–36 months to deliver a strategic innovation project. Crucially for a small founder: <strong>for SMEs, ~67% of project cost is grant-funded by Innovate UK</strong>, with total eligible costs typically around £8,500/month and the business paying roughly a third. The university is the lead applicant; you must show you can fund your contribution and supervise the associate day-to-day.</p><p><strong>CASE / iCASE PhD studentships</strong> (UKRI — EPSRC, BBSRC, STFC, MRC, NERC) — a jointly-supervised PhD on a project of mutual interest, with the student spending a placement (minimum ~12 weeks for iCASE) inside your company. Cheap access to a 3-4 year deep research effort plus a future hire.</p><p><strong>Catapult centres</strong> (Innovate UK) — nine world-leading technology centres (digital, manufacturing, cell &amp; gene therapy, satellite applications, offshore renewables, compound semiconductors, etc.). Any UK business can access their facilities, equipment and experts to move from concept to commercialisation.</p><p><strong>Innovate UK grants &amp; collaborative R&amp;D</strong> — competitive funding, frequently requiring or rewarding a university partner. Innovate UK Business Connect helps make introductions.</p><p><strong>Sponsored / contract research</strong> — you simply pay the university to run a defined piece of research for you (statement of work, budget, IP terms). Fastest and most flexible, but you fund it.</p>
+<ul class="ticks">
+<li>KTP: ~67% grant-funded for SMEs; embed a graduate + academic supervisor for 1-3 years</li>
+<li>CASE/iCASE: jointly-supervised PhD with an in-company placement</li>
+<li>Catapults: any UK business can access world-class labs, kit and experts</li>
+<li>Innovate UK collaborative R&amp;D: competitive grants that favour company-university teams</li>
+<li>Contract/sponsored research: pay-for-a-project — fastest, most flexible route</li>
+</ul>
+</div>
+<div class="block reveal"><h3>How a small company actually starts</h3>
+<p>The practical sequence is simpler than it looks:</p><p>1. <strong>Find the right academic.</strong> Identify a department and a specific researcher whose published work overlaps your problem. Read 2-3 of their papers; reference them when you reach out. A warm, specific email ('I read your 2024 paper on X, we're tackling a related problem commercially') beats a cold pitch.</p><p>2. <strong>Go through the Business Engagement / Technology Transfer Office (TTO).</strong> Every UK university has one (sometimes 'Research &amp; Enterprise', 'Commercialisation', or 'Business Partnerships'). They exist to broker exactly these deals — they handle agreements, costing, IP and introductions, and increasingly want SME engagement.</p><p>3. <strong>Scope a small first project.</strong> Don't open with a multi-year ask. A short feasibility study, a student project, or a paid consultancy day with the academic builds trust and produces a quick artefact.</p><p>4. <strong>Sign an NDA, then a research/collaboration agreement.</strong> Use the government's <strong>Lambert Toolkit</strong> as a starting template — 7 one-to-one model collaboration agreements and 4 multi-party consortium agreements, designed to cut negotiation time and cost. (Note: governed by English law.)</p><p>5. <strong>Agree IP up front.</strong> The Lambert defaults usually give one party ownership but guarantee the company <em>at least</em> a non-exclusive right to use the results. Decide who owns foreground IP, what happens to background IP, and publication rights — academics will want to publish, which is the credibility you actually want.</p>
+<ul class="ticks">
+<li>Lead with a specific academic whose papers match your problem — cite them</li>
+<li>The TTO / Business Engagement office is the front door; they broker the deal</li>
+<li>Start tiny: a feasibility study or student project before a big commitment</li>
+<li>NDA first, then a research agreement — use the Lambert Toolkit as your template</li>
+<li>Settle IP ownership, background-IP use, and publication rights before work starts</li>
+</ul>
+</div>
+<div class="block reveal"><h3>Why it works for both sides</h3>
+<p>This is symbiotic, which is why Masi framed it as good for the paper <em>and</em> the university. Understanding the academic's incentives lets you offer them what they actually want.</p><p><strong>What the academic / university gets:</strong> real-world data and a genuine problem to point their methods at; funding (often leveraged with government co-funding); a <strong>REF impact case study</strong> — in the UK's Research Excellence Framework, demonstrable real-world impact from research drives funding and prestige, and a company collaboration is prime evidence (e.g. a Middlesex–Tata collaboration yielded 30+ outputs and a REF2021 impact case study); publications; trained students with jobs to go to; and infrastructure investment.</p><p><strong>What the company gets:</strong> credibility and validation; de-risked R&amp;D (the university absorbs methodological risk); IP and know-how; a talent pipeline; and access to equipment.</p><p>The practical takeaway: when you pitch an academic, don't just ask for help — offer them <em>impact, data and a fundable project</em>. That is their currency.</p>
+<ul class="ticks">
+<li>Academics gain data, funding, publications, trained students, and REF impact evidence</li>
+<li>REF impact case studies materially affect a UK university's funding and reputation</li>
+<li>Companies gain credibility, de-risked R&amp;D, IP, talent and lab access</li>
+<li>Pitch the academic in their currency: real-world impact + a fundable, publishable problem</li>
+</ul>
+</div>
+<div class="block reveal"><h3>Realistic caveats — go in with eyes open</h3>
+<p>This strategy is powerful but not frictionless:</p><p><strong>Timelines are slow.</strong> University processes, ethics approvals, agreement negotiation and academic teaching loads mean things move in academic terms, not startup sprints. A KTP or studentship is measured in years. Budget for it; don't put it on the critical path of a product launch.</p><p><strong>IP negotiation can stall deals.</strong> Goals genuinely conflict — universities want to disseminate knowledge and publish; companies want to appropriate it. Existing contract templates don't cover every scenario. This is the single most common reason collaborations break down. Using the Lambert Toolkit and agreeing IP/publication terms early defuses most of it.</p><p><strong>Overhead / Full Economic Cost (FEC).</strong> UK universities cost research using FEC, which loads in estates, central services, depreciation and infrastructure on top of direct costs. The 'price' you pay on a contract can be much higher than the raw researcher time, because you're partly funding the university's overhead. Grant schemes (KTP, Innovate UK) exist partly to subsidise this — which is why they're the cheap way in.</p><p><strong>Managing academic vs commercial incentives.</strong> The academic optimises for publications and novelty; you optimise for a shippable result. Capacity is also scarce — there are roughly 22 SMEs per UK academic (~5.5m SMEs vs ~245k academics), so good researchers are in demand. Be a good, clear, well-organised partner and you'll get more of their attention.</p>
+<ul class="ticks">
+<li>Slow: think years, not sprints — keep it off your product critical path</li>
+<li>IP/publication conflict is the #1 deal-killer — settle it in writing up front</li>
+<li>FEC overheads make direct contracts pricey; grant schemes subsidise this gap</li>
+<li>Align expectations: their currency is publications/novelty, yours is a shippable result</li>
+<li>Academic capacity is scarce (~22 SMEs per academic) — be the easy, organised partner</li>
+</ul>
+</div>
+<div class="block reveal"><h3>What Adam should do next</h3>
+<p>Given Adam appears UK-linked (the 'londonmetdubc' repo suggests a London / London Met / Dubai connection), the most actionable starting point is a <strong>KTP or a small contract-research project</strong> with a relevant department, brokered through that university's Business Engagement office. The KTP route is especially attractive because it is ~67% grant-funded for SMEs and gives you an embedded graduate plus an academic supervisor for 1-3 years — funded R&amp;D <em>and</em> a credibility-building publication in one structure.</p><p>If there is an EU angle, Horizon Europe's <strong>Marie Skłodowska-Curie Actions (MSCA) Doctoral Networks and Industrial Doctorates</strong> fund company-university PhD training across consortia — the 2026 call (HORIZON-MSCA-2026-DN-01, ~€593m) opened on 28 May 2026 and closes 24 November 2026 — it is open right now. These need a consortium of at least 3 organisations from 3 different EU/Associated countries, and the UK participates as an associated country.</p>
+<ul class="ticks">
+<li>Shortlist 2-3 academics whose published work overlaps Adam's product</li>
+<li>Contact the relevant university's Business Engagement / TTO to ask about a KTP or feasibility project</li>
+<li>Default to the KTP route for an SME — heavily subsidised + credibility-building</li>
+<li>Consider Innovate UK Business Connect for introductions and grant signposting</li>
+<li>If EU-relevant, the 2026 MSCA Doctoral Networks call (~€593m) is open now and closes 24 Nov 2026 — it needs ≥3 organisations from ≥3 countries</li>
+</ul>
+</div>
+</div>
+<div class="actions reveal"><h3>What to do next</h3><ol class="steplist">
+<li>Pick a specific research problem in your company that an academic could meaningfully advance, and write it as a one-paragraph project brief.</li>
+<li>Identify 2-3 academics whose published papers overlap that problem; read their recent work so you can reference it in outreach.</li>
+<li>Contact the relevant university's Business Engagement / Technology Transfer Office to ask about routes — name-drop KTP and ask about a small feasibility project first.</li>
+<li>Propose a small, time-boxed first project (feasibility study, consultancy day, or student project) rather than a multi-year commitment, to build trust and produce a quick artefact.</li>
+<li>Before any work, sign an NDA and a research/collaboration agreement using the Lambert Toolkit as a template; settle IP ownership, background-IP use, and publication rights explicitly.</li>
+<li>For a substantial multi-year effort, apply for a KTP (heavily subsidised for SMEs) with the university as lead applicant, or explore an iCASE PhD studentship.</li>
+<li>Treat publication as a feature, not a threat — agree that results will be co-authored and published, since that co-authored paper is the credibility Masi is pointing you toward.</li>
+<li>Budget realistically for slow timelines and FEC overheads, and keep the collaboration off the critical path of any near-term product launch.</li>
+</ol></div>
+<div class="caveats reveal"><h3>Worth keeping in mind</h3><ul>
+<li>Timelines are slow: KTPs and studentships run for years, and university processes (ethics, contracting, teaching loads) move in academic time — keep collaborations off the critical path of near-term product launches.</li>
+<li>IP negotiation is the most common reason collaborations stall — universities want to publish, companies want to appropriate; agree ownership, background-IP rights and publication terms in writing before work begins.</li>
+<li>Full Economic Cost (FEC) overheads mean direct contract research can cost far more than raw researcher time, because you partly fund university estates and infrastructure; grant schemes exist partly to subsidise this.</li>
+<li>Academic capacity is scarce (~28 UK SMEs per academic), so good researchers are in demand — being a clear, organised, easy partner materially affects how much attention you get.</li>
+<li>Funding figures (e.g. ~67% KTP grant rate, ~£8,500/month, MSCA ~EUR 593m) are indicative and change between competition rounds — confirm current numbers on the official Innovate UK / UKRI / European Commission pages before relying on them.</li>
+<li>This is general business and funding information, not legal advice — have any NDA, research agreement or IP arrangement reviewed by a qualified IP/contract lawyer before signing.</li>
+</ul></div>
+<details class="sources reveal"><summary>Sources &amp; further reading (14)</summary><ul>
+<li><a href="https://www.ukri.org/councils/innovate-uk/guidance-for-applicants/guidance-for-specific-funds/knowledge-transfer-partnership-guidance/" target="_blank" rel="noopener">Knowledge Transfer Partnership guidance – UKRI / Innovate UK</a></li>
+<li><a href="https://iuk-ktp.org.uk/discover/" target="_blank" rel="noopener">About Knowledge Transfer Partnerships (Innovate UK KTP)</a></li>
+<li><a href="https://www.ukri.org/what-we-do/developing-people-and-skills/stfc/training/types-of-training/industrial-case-studentships/" target="_blank" rel="noopener">Industrial CASE (iCASE) studentships – UKRI</a></li>
+<li><a href="https://bbsrc.ukri.org/skills/investing-doctoral-training/case-studentships/" target="_blank" rel="noopener">CASE studentships – Collaborative/Industrial placements – BBSRC</a></li>
+<li><a href="https://catapult.org.uk/" target="_blank" rel="noopener">The Catapult Network</a></li>
+<li><a href="https://iuk-business-connect.org.uk/about/innovate-uk-system/catapult-network/" target="_blank" rel="noopener">Innovate UK Catapult Network – Innovate UK Business Connect</a></li>
+<li><a href="https://www.gov.uk/guidance/university-and-business-collaboration-agreements-lambert-toolkit" target="_blank" rel="noopener">University and business collaboration agreements: Lambert Toolkit – GOV.UK</a></li>
+<li><a href="https://www.ukri.org/councils/epsrc/guidance-for-applicants/costs-you-can-apply-for/principles-of-full-economic-costing-fec/" target="_blank" rel="noopener">Principles of full economic costing (FEC) – UKRI/EPSRC</a></li>
+<li><a href="https://www.unite.ai/how-an-academic-partner-can-help-you-validate-your-startups-product/" target="_blank" rel="noopener">How an Academic Partner Can Help You Validate Your Startup's Product – Unite.AI</a></li>
+<li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0166497216300359" target="_blank" rel="noopener">Partner selection and university-industry linkages: small firms' perceptions of partner credibility – ScienceDirect</a></li>
+<li><a href="https://epc.ac.uk/toolkit/case-study-inclusive-innovation-harnessing-industrial-and-academic-research-collaboration-for-solving-industry-problems/" target="_blank" rel="noopener">Case study: Harnessing industrial and academic research collaboration – Engineering Professors Council</a></li>
+<li><a href="https://innovation.ox.ac.uk/wp-content/uploads/2015/04/TT-in-the-UK-Paper.pdf" target="_blank" rel="noopener">UK University Technology Transfer (Oxford / PraxisUnico paper)</a></li>
+<li><a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/doctoral-networks" target="_blank" rel="noopener">Marie Skłodowska-Curie Actions Doctoral Networks – European Commission</a></li>
+<li><a href="https://iuk-business-connect.org.uk/opportunities/horizon-europe-2026-27-marie-sklodowska-curie-actions/" target="_blank" rel="noopener">Horizon Europe 2026-27: Marie Skłodowska-Curie Actions – Innovate UK Business Connect</a></li>
+</ul></details>
+<div class="fcribbon reveal"><span class="fc-dot"></span>Independently fact-checked · verdict <strong>high</strong> · corrections folded in · <a href="notes/02-university-research-niche.md">read the full brief</a></div>
+</section>
+<section class="note" id="note-3" style="--acc:#2B57A4">
+<div class="note-head reveal">
+<div class="note-num">03</div>
+<div class="note-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5A4.5 4.5 0 1 0 15.5 16"/><path d="M6.5 11h6M6.5 13.5h5"/></svg></div>
+<div class="note-headtext">
+<div class="kicker">Funding &amp; intellectual property</div>
+<h2>EU Research Grants for Companies: What Masi Got Right (and the One Number to Fix)</h2>
+<p class="oneliner">Masi told Adam the European Commission funds multi-country company projects (10–12 countries) with research grants, IP-sharing agreements, and university spinouts.</p>
+</div></div>
+<div class="notecard reveal"><div class="nc-tab">Masi said</div><p>&ldquo;The European Commission also looks for a lot of projects in a minimum of 10–12 countries that companies can do, and you get a research grant — your company gets funding — and you can have agreements of how to divide the intellectual property (as a “spinout” of the university).&rdquo;</p></div>
+<div class="tldr reveal"><span class="tldr-k">In short</span>Masi is broadly right: the EU's Horizon Europe programme (~€95.5bn, 2021–2027) funds companies via grants, and winning consortia for big collaborative projects often do span 10–15 partners across 10–12+ countries. But the hard legal minimum is much smaller — typically just 3 independent legal entities from 3 different EU/Associated countries. IP is governed by the Grant Agreement and a negotiated Consortium Agreement (background vs. results, ownership, access rights), and university spinouts genuinely participate. For a single company (no consortium needed), the EIC Accelerator offers up to €2.5M grant plus up to €15M equity — though UK firms can currently take grant-only.</div>
+<div class="facts reveal">
+<div class="fact"><div class="fact-v">Horizon Europe, ~€95.5bn</div><div class="fact-l">Programme &amp; budget</div><div class="fact-n">EU R&amp;I framework programme, 2021–2027; now on 2025–2027 strategic plan + 2026–2027 work programme</div></div>
+<div class="fact"><div class="fact-v">3 entities / 3 countries</div><div class="fact-l">Formal minimum (collaborative)</div><div class="fact-n">Independent legal entities, ≥1 in an EU Member State — NOT 10–12 as Masi said</div></div>
+<div class="fact"><div class="fact-v">10–15+ partners, 10–12+ countries</div><div class="fact-l">Typical winning consortium</div><div class="fact-n">Where Masi's number is realistic — in practice, not as a rule</div></div>
+<div class="fact"><div class="fact-v">100% of eligible costs</div><div class="fact-l">RIA funding rate</div><div class="fact-n">Same for companies and non-profits</div></div>
+<div class="fact"><div class="fact-v">70% for-profit / 100% non-profit</div><div class="fact-l">IA funding rate</div><div class="fact-n">Companies must co-finance ~30% on Innovation Actions</div></div>
+<div class="fact"><div class="fact-v">Up to €2.5M grant + up to €15M equity</div><div class="fact-l">EIC Accelerator</div><div class="fact-n">Single SME/startup, no consortium; UK firms grant-only</div></div>
+<div class="fact"><div class="fact-v">Associated since Jan 2024</div><div class="fact-l">UK status</div><div class="fact-n">Full participation; main carve-out is EIC equity</div></div>
+<div class="fact"><div class="fact-v">~11–15%</div><div class="fact-l">Success rate</div><div class="fact-n">Highly competitive; ~8–12 months submission to funds</div></div>
+</div>
+<div class="viz reveal">
+<div class="viz-head">Masi's &ldquo;10–12 countries&rdquo; — myth vs reality</div>
+<div class="mvr">
+  <div class="mvr-card myth">
+    <div class="mvr-k">What Masi heard</div>
+    <div class="mvr-v">10–12 countries</div>
+    <div class="mvr-n">A reasonable picture of a big winning consortium — but not the rule.</div>
+  </div>
+  <div class="mvr-card rule">
+    <div class="mvr-k">The actual rule</div>
+    <div class="mvr-v">3 from 3</div>
+    <div class="mvr-n">3 independent entities, from 3 EU/Associated countries, ≥1 in a Member State. That's the floor.</div>
+  </div>
+  <div class="mvr-card real">
+    <div class="mvr-k">In practice</div>
+    <div class="mvr-v">10–15+ partners</div>
+    <div class="mvr-n">Competitive bids for big calls really do span 10–12+ countries. Masi's instinct was right.</div>
+  </div>
+</div>
+<div class="viz-sub">How much of your costs are covered</div>
+<div class="bars">
+  <div class="bar-row"><div class="bar-label">RIA — research</div><div class="bar-track"><div class="bar-fill" style="--w:100%;background:#1B7468"></div></div><div class="bar-val">100%</div></div>
+  <div class="bar-row"><div class="bar-label">IA — innovation (companies)</div><div class="bar-track"><div class="bar-fill" style="--w:70%;background:#B07A12"></div></div><div class="bar-val">70%</div></div>
+  <div class="bar-row"><div class="bar-label">CSA — coordination</div><div class="bar-track"><div class="bar-fill" style="--w:100%;background:#1B7468"></div></div><div class="bar-val">100%</div></div>
+</div>
+<div class="callout-mini">Single company, no consortium? The <strong>EIC Accelerator</strong> offers up to <strong>€2.5M grant + up to €15M equity</strong> (UK firms: grant-only).</div>
+<div class="viz-sub">Who owns the IP</div>
+<div class="ipflow">
+  <div class="ipnode"><div class="ip-t">Background IP</div><div class="ip-d">what you bring in — stays yours</div></div>
+  <div class="iparrow">→</div>
+  <div class="ipnode"><div class="ip-t">Results</div><div class="ip-d">owned by whoever creates them</div></div>
+  <div class="iparrow">→</div>
+  <div class="ipnode"><div class="ip-t">Access rights</div><div class="ip-d">free to run the project; fair &amp; reasonable to exploit</div></div>
+</div>
+<div class="callout-mini">University <strong>spinout</strong>: the university licenses the IP out and takes equity — guidance is ~5–10% for software, ~10–25% for life sciences; the UK average fell to ~16% in 2024.</div>
+</div>
+<div class="deep">
+<div class="block reveal"><h3>Fact-check: the '10–12 countries' claim</h3>
+<p>Masi is right in spirit but imprecise on the number. The <strong>formal minimum</strong> for most collaborative Horizon Europe calls (Research and Innovation Actions and Innovation Actions) is <strong>3 independent legal entities from 3 different EU Member States or Associated Countries</strong>, with at least one based in an EU Member State. That is the eligibility floor — not 10–12.</p><p>Where Masi's instinct is correct: in <strong>practice</strong>, competitive proposals for large 'topic' calls (often €4–10M+ budgets) are won by much bigger consortia — frequently <strong>10–15+ partners spanning 10–12 or more countries</strong>, mixing universities, research institutes, large companies, and SMEs. Evaluators reward breadth, complementary expertise, and pan-European impact, so big multi-country teams do dominate the headline projects. So: the <strong>10–12 countries is a realistic description of a winning large consortium, not a requirement.</strong> A small, focused 3-partner project from 3 countries is entirely eligible and funded.</p>
+<ul class="ticks">
+<li>Hard minimum: 3 entities, 3 countries, ≥1 in an EU Member State, all independent of each other</li>
+<li>The minimum must hold continuously for the whole project (if a partner drops out, the others must still satisfy it)</li>
+<li>Some calls set higher or different conditions in the call text — always read the specific topic</li>
+<li>Big consortia (10–15 partners) are common for impact reasons, not because the rules demand them</li>
+</ul>
+</div>
+<div class="block reveal"><h3>How Horizon Europe is structured — the routes for a company</h3>
+<p><strong>Horizon Europe</strong> is the EU's R&amp;I framework programme, ~<strong>€95.5bn for 2021–2027</strong>, now running under the 2025–2027 strategic plan and the newly adopted 2026–2027 work programme. Two broad routes matter for a company:</p><p><strong>1. Collaborative calls (need a consortium):</strong>
+- <strong>Research and Innovation Actions (RIA)</strong> — earlier-stage research; funded at <strong>100% of eligible costs</strong> for everyone, including companies.
+- <strong>Innovation Actions (IA)</strong> — closer-to-market (demonstration, piloting, scaling); funded at <strong>70% of eligible costs for for-profit entities</strong> (non-profits get 100%).
+- (Coordination &amp; Support Actions, CSA, are 100% but fund networking/coordination, not research.)</p><p><strong>2. Single-company instruments (no consortium):</strong>
+- The <strong>EIC Accelerator</strong> (European Innovation Council) backs individual <strong>startups and SMEs</strong> with breakthrough, high-risk innovation. This is the closest fit to 'your company gets funding' on its own.</p>
+<ul class="ticks">
+<li>RIA = research, 100% funding, consortium required</li>
+<li>IA = market-facing innovation, 70% for companies / 100% non-profit, consortium required</li>
+<li>EIC Accelerator = single SME/startup, grant + equity, no consortium needed</li>
+<li>In a mixed IA consortium each partner gets its own rate on its own costs</li>
+</ul>
+</div>
+<div class="block reveal"><h3>EIC Accelerator — the single-company route Masi was gesturing at</h3>
+<p>If a company wants funding without assembling a 10-country consortium, the <strong>EIC Accelerator</strong> is the instrument. It targets <strong>single startups and SMEs</strong> (and small mid-caps for equity-only) with a high-impact, scalable innovation at roughly TRL 6–8.</p><p>Funding is <strong>blended finance</strong>: up to <strong>€2.5M grant</strong> for innovation/development activities, plus an optional <strong>equity investment</strong> from the EIC Fund (typical tickets €0.5M–€10M; €15M is the cap, with up to €30M under the EIC STEP Scale-up scheme) (the Fund takes a direct equity stake — a genuine investor relationship, not just a grant). Companies can apply grant-only, equity-only, or blended. It is fiercely competitive — recent cut-offs have selected only ~40–70 companies per round across all of Europe.</p>
+<ul class="ticks">
+<li>Up to €2.5M grant + up to €15M equity (EIC Fund takes a direct stake)</li>
+<li>Single applicant — no consortium needed</li>
+<li>Includes Business Acceleration Services: investors, corporates, mentoring</li>
+<li>Very low acceptance — multi-stage (short application, full proposal, jury interview)</li>
+</ul>
+</div>
+<div class="block reveal"><h3>IP and the 'spinout' framing</h3>
+<p>Masi's point about 'agreements on how to divide the intellectual property' and university spinouts is accurate and reflects how Horizon Europe actually works.</p><p><strong>IP in Horizon projects is governed by two documents:</strong>
+- The <strong>Grant Agreement (GA)</strong> — sets the EU's default IP rules.
+- The <strong>Consortium Agreement (CA)</strong> — a contract the partners sign among themselves (mandatory for collaborative actions) that customises ownership, access, and exploitation. The GA prevails where they conflict.</p><p><strong>Key IP concepts:</strong>
+- <strong>Background IP</strong> — what each partner brings in (pre-existing knowledge/rights). It stays theirs.
+- <strong>Results (foreground)</strong> — what the project generates. Default rule: <strong>results are owned by the partner that generates them</strong>; joint creation gives joint ownership unless the CA says otherwise.
+- <strong>Access rights</strong> — partners must grant each other access to background and results needed <em>to run the project</em> (royalty-free by default) and <em>to exploit results</em> (royalty-free or on 'fair and reasonable' terms).
+- <strong>Exploitation obligation</strong> — beneficiaries must make best efforts to use or commercialise results (directly, or via licensing/transfer) for up to 4 years after the project ends.</p><p><strong>University spinouts:</strong> a spinout is a new company created to commercialise university research. The university typically <strong>licenses</strong> the underlying IP to the spinout (an exclusive licence is most common early on; outright <strong>assignment</strong> is rarer but cleaner) in exchange for <strong>equity</strong> — UK universities commonly take equity — current TenU/USIT guidance suggests <strong>~10–25% for life-sciences</strong> spinouts and <strong>~5–10% for software</strong> spinouts; the UK sector average fell to <strong>~16% in 2024</strong>, plus possible royalties/milestones. Such a spinout is a normal legal entity and can join a Horizon consortium as a beneficiary in its own right, bringing its licensed IP as 'background' — exactly the model Masi described.</p>
+<ul class="ticks">
+<li>GA = default IP rules; CA = the negotiated deal between partners (GA wins on conflict)</li>
+<li>Results owned by whoever generates them, by default — but the CA can reassign</li>
+<li>Access rights for implementation are royalty-free; for exploitation, fair-and-reasonable</li>
+<li>University spinout: IP licensed/assigned out, university takes equity (~5–10% software, ~10–25% life sciences; UK avg ~16% in 2024)</li>
+</ul>
+</div>
+<div class="block reveal"><h3>UK status and where to find the calls</h3>
+<p>This matters directly for Adam if he's UK-based. The <strong>UK associated to Horizon Europe from 1 January 2024</strong>. UK entities now participate on essentially the <strong>same terms as EU members</strong>: same funding rates, can <strong>lead consortia</strong>, and <strong>count toward the minimum-countries</strong> rule.</p><p><strong>The key exception is the EIC Accelerator equity:</strong> the EIC Fund's equity component is <em>not</em> open to UK companies, so UK applicants can take the <strong>grant-only</strong> EIC Accelerator (up to €2.5M) but not the equity portion. Most other Horizon calls have no such restriction for the UK.</p><p><strong>Where to look:</strong> all calls live on the <strong>EU Funding &amp; Tenders Portal</strong> (single entry point for proposals, partner search, and submission). UK applicants can also consult <strong>UKRI / Innovate UK Business Connect</strong> for guidance and the legacy UK guarantee scheme.</p>
+<ul class="ticks">
+<li>UK = Associated Country since Jan 2024; full participation with very limited exceptions</li>
+<li>EIC Accelerator equity is the main carve-out — UK firms get grant-only</li>
+<li>Find every call on the EU Funding &amp; Tenders Portal (single entry point)</li>
+<li>UKRI and Innovate UK Business Connect support UK applicants</li>
+</ul>
+</div>
+<div class="block reveal"><h3>Realistic caveats before Adam commits</h3>
+<p>The upside is real, but so is the cost of pursuing it. Success rates for Horizon Europe calls typically sit around <strong>11–15%</strong>, so most strong proposals still fail. Evaluation runs up to ~5 months, with the Grant Agreement signed within ~3 months after — so <strong>time-to-money is often 8–12 months from deadline</strong>, longer from when you start writing.</p><p>For a company specifically: an <strong>Innovation Action only reimburses 70%</strong>, so you must <strong>co-finance ~30%</strong> from your own resources. Consortium projects carry heavy <strong>administrative and reporting burden</strong>, and someone has to <strong>build and manage the consortium</strong> (partner search, proposal writing, negotiating the Consortium Agreement and IP split). Many applicants use specialist consultants for exactly this reason.</p>
+<ul class="ticks">
+<li>Success rates ~11–15% — budget for the possibility of not winning</li>
+<li>8–12 months typical from submission to first funds</li>
+<li>IA = 70% funding, so plan for ~30% co-financing</li>
+<li>Consortium-building, admin, reporting and IP negotiation are non-trivial overheads</li>
+</ul>
+</div>
+</div>
+<div class="actions reveal"><h3>What to do next</h3><ol class="steplist">
+<li>Decide the route first: if Adam's company can deliver alone, target the EIC Accelerator (single applicant, grant + equity); if the work needs partners, target a collaborative RIA/IA call.</li>
+<li>Browse open and forthcoming calls on the EU Funding &amp; Tenders Portal (ec.europa.eu/info/funding-tenders) and filter by Horizon Europe cluster/topic relevant to the company's tech.</li>
+<li>For collaborative calls, start partner-building early — aim for a credible consortium (the 3/3 minimum is the floor; competitive bids are bigger) using the Portal's partner-search.</li>
+<li>Map the IP upfront: list your Background IP, plan how Results will be owned, and draft the Consortium Agreement IP/access terms before submission.</li>
+<li>If a university spinout is involved, lock the IP licence/assignment and equity split (university typically ~10–25%) so the spinout can enter the consortium as a clean beneficiary.</li>
+<li>Budget for co-financing (~30% on Innovation Actions) and for an 8–12 month gap to first funds; consider a specialist grant consultant.</li>
+<li>UK applicants: confirm eligibility via UKRI / Innovate UK Business Connect and note EIC Accelerator is grant-only for UK companies.</li>
+</ol></div>
+<div class="caveats reveal"><h3>Worth keeping in mind</h3><ul>
+<li>Correcting Masi gently: the '10–12 countries' figure is not the eligibility rule — the formal minimum is 3 independent entities from 3 different EU/Associated countries. The 10–12 figure describes what large winning consortia often look like in practice, so his underlying point (big multi-country teams) is sound.</li>
+<li>'You get a research grant and your company gets funding' is true, but Innovation Actions reimburse for-profit companies at only 70% — the company must co-finance roughly 30%. RIA is 100%.</li>
+<li>Success rates are low (~11–15%) and time-to-grant is long (~8–12 months from deadline to first funds); this is not fast or easy money.</li>
+<li>EIC Accelerator equity is currently NOT available to UK companies (grant-only); other Horizon rules and figures can change with each work programme and call text — always verify against the specific call on the EU Funding &amp; Tenders Portal.</li>
+<li>This is general informational guidance, not legal or financial advice. IP ownership, spinout equity splits, and consortium terms are negotiable and case-specific — get qualified legal/tech-transfer advice before signing a Consortium Agreement or spinout licence.</li>
+</ul></div>
+<details class="sources reveal"><summary>Sources &amp; further reading (12)</summary><ul>
+<li><a href="https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en" target="_blank" rel="noopener">Horizon Europe — European Commission (Research &amp; Innovation)</a></li>
+<li><a href="https://climate.ec.europa.eu/news-other-reads/news/commission-adopts-main-horizon-europe-work-programme-2026-2027-and-dedicates-eu49-billion-climate-2025-12-11_en" target="_blank" rel="noopener">Commission adopts main Horizon Europe Work Programme 2026–2027</a></li>
+<li><a href="https://www.ffg.at/en/europe/heu/legal-financial/participation" target="_blank" rel="noopener">Minimum conditions for participation in Horizon Europe — FFG</a></li>
+<li><a href="https://www.emdesk.com/horizon-2020-horizon-europe-basics-guide/understanding-ria-ia-and-csa-projects-in-horizon-europe" target="_blank" rel="noopener">RIA, IA, CSA in Horizon Europe — EMDESK</a></li>
+<li><a href="https://www.ffg.at/en/europe/heu/legal-financial/theme_funding-rates" target="_blank" rel="noopener">Funding rates in Horizon Europe — FFG</a></li>
+<li><a href="https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en" target="_blank" rel="noopener">EIC Accelerator — European Innovation Council</a></li>
+<li><a href="https://intellectual-property-helpdesk.ec.europa.eu/news-events/news/ownership-horizon-europe-who-gets-what-2022-04-25_en" target="_blank" rel="noopener">Ownership in Horizon Europe – who gets what? — EU IP Helpdesk</a></li>
+<li><a href="https://intellectual-property-helpdesk.ec.europa.eu/system/files/2023-03/Your%20Guide%20to%20Intellectual%20Property%20Management%20in%20Horizon%20Europe.pdf" target="_blank" rel="noopener">Your Guide to Intellectual Property Management in Horizon Europe (PDF) — EU IP Helpdesk</a></li>
+<li><a href="https://www.orrick.com/en/Insights/2024/12/Legal-Ninja-Snapshot-Technology-Transfers-How-much-should-a-University-hold-in-IP-based-Spin-Outs" target="_blank" rel="noopener">Technology Transfers: How much should a University hold in IP-based Spin-Outs? — Orrick</a></li>
+<li><a href="https://www.gov.uk/government/publications/horizon-europe-and-copernicus-programmes-2023-uk-eu-agreement-explainer/horizon-europe-and-copernicus-programmes-2023-uk-eu-agreement-explainer" target="_blank" rel="noopener">UK Association to Horizon Europe and Copernicus: explainer — GOV.UK</a></li>
+<li><a href="https://www.ukri.org/publications/uk-association-to-horizon-europe-and-the-uk-horizon-europe-guarantee/uk-association-to-horizon-europe-and-the-uk-horizon-europe-guarantee/" target="_blank" rel="noopener">UK association to Horizon Europe and the UK Horizon Europe guarantee — UKRI</a></li>
+<li><a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/programmes/horizon" target="_blank" rel="noopener">EU Funding &amp; Tenders Portal — Horizon Europe</a></li>
+</ul></details>
+<div class="fcribbon reveal"><span class="fc-dot"></span>Independently fact-checked · verdict <strong>high</strong> · corrections folded in · <a href="notes/03-eu-commission-grants.md">read the full brief</a></div>
+</section>
+<section class="note" id="note-4" style="--acc:#AE3F63">
+<div class="note-head reveal">
+<div class="note-num">04</div>
+<div class="note-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5S3.5 15.5 3.5 9.7A4.2 4.2 0 0 1 12 7.2a4.2 4.2 0 0 1 8.5 2.5C20.5 15.5 12 20.5 12 20.5Z"/></svg></div>
+<div class="note-headtext">
+<div class="kicker">A report for Masi</div>
+<h2>Why Sofia's Head Got a "Goose Egg" Lump and Then a Bruise</h2>
+<p class="oneliner">Masi asked why Sofia developed a walnut-sized lump on her head after a fall that then turned into a colour-changing bruise.</p>
+</div></div>
+<div class="notecard reveal"><div class="nc-tab">Masi said</div><p>&ldquo;Why did Sofia get a walnut and then a bruise on her head after falling? — Send Masi a report.&rdquo;</p></div>
+<div class="tldr reveal"><span class="tldr-k">In short</span>After a knock, the scalp's many tiny blood vessels burst and leak blood, which has nowhere to go over the hard skull but to push outward, raising a firm "goose egg" lump within minutes. As the body cleans up that trapped blood over the next 1-2 weeks, the leaked blood spreads and the breakdown of haemoglobin makes it change colour (red to purple/blue to green to yellow), which is the bruise. This is usually a scalp injury rather than a brain injury, but please watch Sofia closely and seek urgent care if any of the red-flag signs below appear.</div>
+<div class="facts reveal">
+<div class="fact"><div class="fact-v">Scalp haematoma / contusion</div><div class="fact-l">Medical name for the lump</div><div class="fact-n">A collection of leaked blood under the scalp — the 'goose egg'</div></div>
+<div class="fact"><div class="fact-v">Within minutes</div><div class="fact-l">How fast it forms</div><div class="fact-n">Because the scalp is very vascular and blood is pushed outward over the hard skull</div></div>
+<div class="fact"><div class="fact-v">Haemoglobin breakdown</div><div class="fact-l">Why it bruises</div><div class="fact-n">Leaked blood is broken down by the body, changing colour as it heals</div></div>
+<div class="fact"><div class="fact-v">Red → blue/purple → green → yellow/brown</div><div class="fact-l">Colour sequence</div><div class="fact-n">From haemoglobin to biliverdin to bilirubin as the blood clears</div></div>
+<div class="fact"><div class="fact-v">About 1-2 weeks</div><div class="fact-l">Typical healing time</div><div class="fact-n">Lump softens and flattens; bruise fades and may migrate slightly</div></div>
+<div class="fact"><div class="fact-v">Usually a scalp injury, not brain injury</div><div class="fact-l">Is a lump usually serious?</div><div class="fact-n">But lump size does NOT indicate severity — watch behaviour and symptoms</div></div>
+<div class="fact"><div class="fact-v">Cloth-wrapped ice ~20 min, rest, paracetamol</div><div class="fact-l">First aid</div><div class="fact-n">Watch closely for 24-48 hours</div></div>
+<div class="fact"><div class="fact-v">999 / A&amp;E if any red-flag sign</div><div class="fact-l">When to get urgent help</div><div class="fact-n">See red-flag section; be extra cautious in children, older adults, blood thinners</div></div>
+</div>
+<div class="viz reveal">
+<div class="report-band">
+  <div>
+    <div class="rb-k">Report for Masi</div>
+    <div class="rb-t">Why a lump appears first, then a bruise</div>
+  </div>
+  <button class="printbtn" onclick="window.print()" aria-label="Print this report">Print report</button>
+</div>
+<div class="viz-sub">What happens under the skin</div>
+<div class="xsection" role="img" aria-label="Cross-section of the scalp showing pooled blood forming a lump over the skull">
+  <svg viewBox="0 0 460 170" width="100%" height="170" preserveAspectRatio="xMidYMid meet">
+    <path d="M10 60 Q230 -10 450 60 L450 78 Q230 14 10 78 Z" fill="#E7B98F"/>
+    <path d="M150 70 Q230 8 310 70 Q310 96 230 96 Q150 96 150 70 Z" fill="#C0405E"/>
+    <path d="M10 96 Q230 78 450 96 L450 150 Q230 134 10 150 Z" fill="#EDE6DA"/>
+    <text x="356" y="44" font-size="12" fill="#6b4a39">skin / scalp</text>
+    <text x="232" y="58" font-size="12" fill="#7a1f34" text-anchor="middle">pooled blood</text>
+    <text x="232" y="128" font-size="12" fill="#8a8270" text-anchor="middle">hard skull bone</text>
+  </svg>
+</div>
+<p class="xnote">The scalp is packed with tiny blood vessels and sits on hard bone. A knock bursts some vessels; the blood can't drain, so it pushes <em>outward</em> into a firm &ldquo;goose egg&rdquo; — sometimes within minutes. This is a scalp haematoma.</p>
+<div class="viz-sub">Then it heals — and changes colour</div>
+<div class="bruise">
+  <div class="bswatch" style="background:#D14B4B;color:#fff"><span>Day 0–1</span><b>Red</b></div>
+  <div class="bswatch" style="background:#6E4E9A;color:#fff"><span>Day 1–2</span><b>Purple</b></div>
+  <div class="bswatch" style="background:#5E8B3A;color:#fff"><span>Day 3–7</span><b>Green</b></div>
+  <div class="bswatch" style="background:#C9A227;color:#3a2e06"><span>Day 5–14</span><b>Yellow</b></div>
+  <div class="bswatch" style="background:#E7C9A8;color:#5b4530"><span>~2 weeks</span><b>Gone</b></div>
+</div>
+<p class="xnote">As the body clears the trapped blood, haemoglobin breaks down step by step — each by-product a different colour. The lump softens and the bruise fades, usually within about two weeks.</p>
+<div class="redflags">
+  <div class="rf-head"><span class="rf-mark">!</span> Seek urgent care now — A&amp;E / call 999 (UK) or 911 (US) — if Sofia has ANY of these</div>
+  <ul class="rf-list">
+    <li>Knocked out, hard to wake, or unusually sleepy</li>
+    <li>Vomiting more than once (especially in a young child)</li>
+    <li>Increasing drowsiness, confusion, or odd behaviour</li>
+    <li>A seizure, or new neck pain / pain on moving the neck</li>
+    <li>Unequal pupils, or blurred / double vision</li>
+    <li>Clear or bloody fluid from the nose or ears; bruising behind the ears</li>
+    <li>Weakness, numbness, or problems with balance, walking or speech</li>
+    <li>A severe or worsening headache</li>
+    <li>A lump that keeps growing, or a dent in the skull</li>
+    <li>Inconsolable crying you can't settle (a baby or very young child)</li>
+  </ul>
+  <div class="rf-extra">Be extra careful — get her checked promptly — if Sofia is very young or elderly, takes blood-thinners, or fell from a height or with force. <strong>Any</strong> swelling in a baby under 1 should be seen. A single vomit with no other sign can start with a call to NHS 111. When in doubt, don't wait.</div>
+</div>
+<div class="homecare">
+  <div class="hc-head">If she's alert, herself, and has none of the above — gentle home care</div>
+  <div class="hc-grid">
+    <div class="hc-item"><b>Ice</b> wrapped in a cloth, ~20 min on/off — never directly on skin</div>
+    <div class="hc-item"><b>Rest</b> with an adult nearby to check on her for 24 hours</div>
+    <div class="hc-item"><b>Paracetamol</b> per the packet dose; avoid ibuprofen the first 24–48h unless a clinician says otherwise</div>
+    <div class="hc-item"><b>Watch</b> for 24–48h; trust your instincts and seek help if anything worsens</div>
+  </div>
+</div>
+<div class="med-disc">This is general information to help you understand what you're seeing — it is <strong>not a diagnosis</strong> and can't replace seeing Sofia in person. You know her best; if anything feels off, please get her checked.</div>
+</div>
+<div class="deep">
+<div class="block reveal"><h3>Why a lump appears so fast (the 'goose egg')</h3>
+<p>The scalp is one of the most blood-rich areas of the body. It has a dense network of tiny blood vessels sitting in a thin layer of loose tissue, directly on top of the hard skull bone. When Sofia hit her head, the impact ruptured some of those little vessels. Because the skin was not broken, the blood and fluid that leaked out had nowhere to drain. Trapped between the skin and the unyielding skull, it could only push <em>outward</em> — and that is what raises a firm, dome-shaped swelling, often the size of a walnut or an egg, sometimes within just a few minutes. The medical name for this is a scalp haematoma (a collection of blood) or contusion (a bruise).</p>
+<ul class="ticks">
+<li>Scalp = lots of small blood vessels + loose tissue + hard bone underneath</li>
+<li>Impact breaks vessels; blood pools and is pushed up and out into a lump</li>
+<li>Forms fast (minutes) and can look dramatic even after a minor bump</li>
+<li>'Goose egg', 'egg', or 'walnut' are everyday names for the same thing</li>
+</ul>
+</div>
+<div class="block reveal"><h3>Why it then turns into a colour-changing bruise</h3>
+<p>A lump and a bruise are really two stages of the same injury. Once the bleeding stops, the trapped blood slowly spreads into the surrounding tissue and the body begins to clear it away. As the red blood cells break down, the iron-carrying protein inside them (haemoglobin) is broken down step by step, and each breakdown product is a different colour. That is why a bruise visibly shifts colour over days — it is the chemistry of healing happening just under the skin. Over roughly one to two weeks the lump usually softens and flattens, and the bruise fades and may even seem to 'travel' downward a little as gravity pulls the settled blood.</p>
+<ul class="ticks">
+<li>Day 0-1: red — fresh, oxygen-rich blood pooled under the skin</li>
+<li>Day 1-2: blue/purple — oxygen leaves the trapped blood</li>
+<li>Day 3-7: green — haemoglobin breaks down into biliverdin (a green pigment)</li>
+<li>Day 5-14: yellow/brown — biliverdin converts to bilirubin, then clears away</li>
+<li>Most bruises fade and disappear within about 2 weeks</li>
+</ul>
+</div>
+<div class="block reveal"><h3>Why a head lump usually looks scarier than it is</h3>
+<p>It is natural to be alarmed by a sudden egg-sized lump on a child's head, but a scalp lump is often a reassuring sign rather than a worrying one. A big lump can look alarming but often forms even after a fairly minor knock — on its own, the size of the bump does not tell you whether the brain was injured. In most cases a goose egg is a surface (scalp) injury, not a brain injury. That said, the size of the lump does NOT reliably tell you how serious the underlying injury is — so the lump itself is reassuring, but Sofia's <em>behaviour and symptoms</em> over the next day or two are what really matter (see the safety section).</p>
+<ul class="ticks">
+<li>A big lump can form even after a fairly minor knock — size alone doesn't signal a brain injury</li>
+<li>Most head lumps are scalp injuries, not brain injuries</li>
+<li>Lump size does NOT reliably indicate how serious the injury is</li>
+<li>Watch Sofia's behaviour and symptoms, not just the bump</li>
+</ul>
+</div>
+<div class="block reveal"><h3>RED-FLAG WARNING SIGNS — seek urgent care / A&amp;E / 999</h3>
+<p>This is the most important part. A lump alone is usually fine, but after ANY head injury you should get urgent medical help (call 999 in the UK / 911 in the US, or go straight to A&amp;E / the ER) if Sofia shows any of the signs below. Be extra cautious if she is a young child, an older adult, or takes blood-thinning medication, or if the fall was from a height greater than her own height or involved significant force. When in doubt, get her checked — it is always better to be safe.</p>
+<ul class="ticks">
+<li>Loss of consciousness, blacking out, or being hard to wake / unusually sleepy</li>
+<li>Repeated vomiting (more than once — especially in a young child)</li>
+<li>Increasing drowsiness, confusion, not recognising people, or odd behaviour</li>
+<li>A seizure / fit or any twitching of the body, or new neck pain / pain on moving the neck (don't move her — get help)</li>
+<li>Pupils that are unequal sizes, blurred or double vision, or other vision changes</li>
+<li>Clear or bloody fluid leaking from the nose or ears; bruising behind the ears</li>
+<li>Weakness, numbness, problems with walking, balance or coordination</li>
+<li>A headache that is severe or keeps getting worse, or slurred / unclear speech</li>
+<li>A lump that keeps growing, a visible dent in the skull, or a deep wound</li>
+<li>Unusual or constant irritability you cannot calm (especially in a baby or young child)</li>
+<li>Any swelling at all in a baby under 1 year, or any head injury while on blood thinners</li>
+</ul>
+</div>
+<div class="block reveal"><h3>Simple home care for a minor bump</h3>
+<p>If Sofia is alert, behaving normally, and has none of the red-flag signs, a minor goose egg can usually be cared for at home while you keep a close eye on her. The aim is to ease swelling, keep her comfortable, and watch her for the first 24-48 hours.</p>
+<ul class="ticks">
+<li>Apply a cloth-wrapped ice pack (or frozen peas in a tea towel) gently to the lump for up to about 20 minutes, then take a break, and repeat as needed — never put ice directly on skin</li>
+<li>Let her rest quietly; she can sleep, but have an adult nearby to check on her for at least 24 hours</li>
+<li>Paracetamol can be given for pain if needed, following the dose on the packet for her age/weight</li>
+<li>Some guidance suggests avoiding ibuprofen in the first 24-48 hours after a head injury (it can affect bleeding/swelling) — follow your local doctor's or pharmacist's advice</li>
+<li>Watch over the next 24-48 hours and trust your instincts: if anything worsens or worries you, seek medical advice</li>
+</ul>
+</div>
+<div class="block reveal"><h3>A kind note</h3>
+<p>Most head bumps in children heal completely on their own, and the lump-then-bruise sequence you saw on Sofia is the normal, expected pattern of healing. This note is here to help you understand what is happening and to know exactly which signs mean you should act quickly. You know Sofia best — if something feels off, please don't hesitate to get her seen.</p>
+<ul class="ticks">
+<li>The lump-then-bruise pattern is normal, expected healing</li>
+<li>Most childhood head bumps heal on their own</li>
+<li>Trust your instincts — seek care if anything feels off</li>
+</ul>
+</div>
+</div>
+<div class="actions reveal"><h3>What to do next</h3><ol class="steplist">
+<li>Check Sofia right now for any red-flag signs listed above (alertness, vomiting, drowsiness, vision, balance, speech, behaviour).</li>
+<li>If ANY red-flag sign is present — or if the fall was from height/with force, or she's on blood thinners — seek urgent care now (A&amp;E / call 999 in the UK, 911 in the US).</li>
+<li>If she's alert and well, apply a cloth-wrapped ice pack to the lump for up to ~20 minutes, then break and repeat.</li>
+<li>Let her rest and give paracetamol for pain if needed, following the packet dose; avoid ibuprofen in the first 24-48h unless a clinician advises otherwise.</li>
+<li>Keep a close eye on her for the next 24-48 hours, with an adult nearby for at least the first 24 hours.</li>
+<li>Expect the lump to soften and the bruise to change colour and fade over 1-2 weeks — this is normal healing.</li>
+<li>If anything worsens, the lump keeps growing, or you're worried at any point, call NHS 111 (or your doctor) or go to A&amp;E.</li>
+</ol></div>
+<div class="caveats danger reveal"><h3>Worth keeping in mind</h3><ul>
+<li>This is general educational information, NOT a medical diagnosis. It cannot replace an in-person assessment of Sofia.</li>
+<li>RED FLAGS — seek urgent care / A&amp;E / call 999 (UK) or 911 (US) after ANY head injury if Sofia has: loss of consciousness or is hard to wake; repeated vomiting (more than once, especially in a young child); increasing drowsiness, confusion or odd behaviour; a seizure; unequal pupils or vision changes; clear or bloody fluid from nose or ears, or bruising behind the ears; weakness, numbness, or problems with balance/walking/speech; a severe or worsening headache; a lump that keeps growing or a dent in the skull; or unusual, inconsolable irritability in a young child.</li>
+<li>Be especially cautious — get her assessed promptly — if Sofia is a baby/young child or an older adult, takes blood-thinning medication, or if the fall was from a height greater than her own height or involved significant force. ANY swelling in a baby under 1 year should be checked.</li>
+<li>Lump size does NOT reliably indicate how serious the injury is — a small lump can still accompany a serious injury, and a big lump is often just a scalp injury. Symptoms and behaviour matter more than the size of the bump.</li>
+<li>Some guidance advises avoiding ibuprofen in the first 24-48 hours after a head injury due to possible effects on bleeding/swelling — follow your local doctor's or pharmacist's advice, and use paracetamol per the packet dose.</li>
+<li>If you are ever unsure or worried, do not wait — call NHS 111, your doctor, or emergency services. It is always better to have her checked.</li>
+</ul></div>
+<details class="sources reveal"><summary>Sources &amp; further reading (7)</summary><ul>
+<li><a href="https://www.nhs.uk/conditions/head-injury-and-concussion/" target="_blank" rel="noopener">NHS — Head injury and concussion</a></li>
+<li><a href="https://health.clevelandclinic.org/goose-egg-on-head" target="_blank" rel="noopener">Cleveland Clinic — Goose Egg on the Head? Here's What To Do</a></li>
+<li><a href="https://www.rch.org.au/kidsinfo/fact_sheets/head_injury/" target="_blank" rel="noopener">The Royal Children's Hospital Melbourne — Head injury general advice</a></li>
+<li><a href="https://www.cdc.gov/heads-up/signs-symptoms/index.html" target="_blank" rel="noopener">CDC HEADS UP — Signs and Symptoms of Concussion</a></li>
+<li><a href="https://www.childrensmn.org/blog/child-bumped-head-when-to-worry/" target="_blank" rel="noopener">Children's Minnesota — My child bumped their head: When should I worry?</a></li>
+<li><a href="https://www.medicalnewstoday.com/articles/322742" target="_blank" rel="noopener">Medical News Today — Bruise colors: stages, causes, and when to contact a doctor</a></li>
+<li><a href="https://www.thebloodproject.com/bruises/" target="_blank" rel="noopener">The Blood Project — Bruises (haemoglobin to biliverdin to bilirubin)</a></li>
+</ul></details>
+<div class="fcribbon reveal"><span class="fc-dot"></span>Independently fact-checked · verdict <strong>high</strong> · corrections folded in · <a href="notes/04-sofia-head-injury-report.md">read the full brief</a></div>
+</section>
+<section class="note" id="note-5" style="--acc:#6446A8">
+<div class="note-head reveal">
+<div class="note-num">05</div>
+<div class="note-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 17l-5.2 2.6 1-5.8L3.5 9.7l5.9-.9L12 3.5Z"/></svg></div>
+<div class="note-headtext">
+<div class="kicker">Teaching &amp; play</div>
+<h2>The 30-Minute Magic: Tutoring a 4-Year-Old So She Begs to Come Back</h2>
+<p class="oneliner">Adam's advice to Masi: with a 4-year-old, once a week, make the relationship and the FUN the lesson — build a recurring character, theme everything around her obsessions, and rotate playful 5-10 minute games inside one warm 30-minute ritual.</p>
+</div></div>
+<div class="notecard reveal"><div class="nc-tab">Masi said</div><p>&ldquo;How to best tutor a 4-year-old girl, 30 minutes once a week — I want it to be highly personalised and very fun!&rdquo;</p></div>
+<div class="tldr reveal"><span class="tldr-k">In short</span>A 4-year-old can only focus on an adult-set task for a handful of minutes, so the session must move every 5-10 minutes through play, movement, stories and songs — never a "lesson." Because you only meet once a week, retention is fragile, so your real job is emotional connection and continuity: a recurring mascot/character, an opening and closing "magic" ritual, and a tiny weekly "mission" parents help with between sessions. Personalise relentlessly — discover what she loves (dinosaurs? princesses? a favourite colour?) and theme every game around it, letting her choose and lead. Measure progress by joyful observation and a sticker chart, not testing, and always end on a high.</div>
+<div class="facts reveal">
+<div class="fact"><div class="fact-v">~8-12 min</div><div class="fact-l">Focus per adult-set task</div><div class="fact-n">Often far less; switch activity every 5-10 min to stay ahead of drift</div></div>
+<div class="fact"><div class="fact-v">30 min</div><div class="fact-l">Session length</div><div class="fact-n">Broken into 3-5 short bursts, alternating focus and movement</div></div>
+<div class="fact"><div class="fact-v">1x / week</div><div class="fact-l">Frequency</div><div class="fact-n">Low retention risk — continuity (mascot, ritual, mission) is essential</div></div>
+<div class="fact"><div class="fact-v">SATPIN (s,a,t,p,i,n)</div><div class="fact-l">Best first letters</div><div class="fact-n">The UK phonics order; distinct sounds that blend into words — save look-alikes like b/d for later</div></div>
+<div class="fact"><div class="fact-v">to ~10-20</div><div class="fact-l">Counting at 4</div><div class="fact-n">Always with real objects she can touch and move</div></div>
+<div class="fact"><div class="fact-v">Play-based</div><div class="fact-l">Core method</div><div class="fact-n">EYFS + Montessori: play, story, song, movement — never worksheets</div></div>
+<div class="fact"><div class="fact-v">Connection</div><div class="fact-l">Top priority</div><div class="fact-n">Emotional bond + fun outrank volume of content every time</div></div>
+<div class="fact"><div class="fact-v">Theme to HER</div><div class="fact-l">Personalisation</div><div class="fact-n">Build every game around her current obsession (dinos/space/princesses/colour)</div></div>
+</div>
+<div class="viz reveal">
+<div class="viz-head">The 30-minute session, mapped</div>
+<div class="sessbar" role="img" aria-label="A 30-minute session split into six timed segments alternating focus and movement">
+  <div class="ss" style="--w:10%;--c:#6446A8"><span class="ss-l">Welcome</span><span class="ss-m">3m</span></div>
+  <div class="ss" style="--w:23.3%;--c:#1B7468"><span class="ss-l">Letters &amp; sounds</span><span class="ss-m">7m</span></div>
+  <div class="ss" style="--w:16.7%;--c:#B07A12"><span class="ss-l">Move / break</span><span class="ss-m">5m</span></div>
+  <div class="ss" style="--w:23.3%;--c:#2B57A4"><span class="ss-l">Counting</span><span class="ss-m">7m</span></div>
+  <div class="ss" style="--w:16.7%;--c:#AE3F63"><span class="ss-l">Story</span><span class="ss-m">5m</span></div>
+  <div class="ss" style="--w:10%;--c:#6446A8"><span class="ss-l">Close</span><span class="ss-m">3m</span></div>
+</div>
+<p class="xnote">Focus, then a body break, then focus, then calm — never one long &ldquo;lesson.&rdquo; Open and close with the same little ritual every week, and end on a high so she counts down to next time.</p>
+<div class="split3">
+  <div class="pcard"><div class="pc-n">1</div><div class="pc-t">Discover</div><div class="pc-d">Find her obsession — dinosaurs, space, a colour</div></div>
+  <div class="pcard"><div class="pc-n">2</div><div class="pc-t">Theme it</div><div class="pc-d">Every game wears that costume — &ldquo;S like a Snake&rdquo;</div></div>
+  <div class="pcard"><div class="pc-n">3</div><div class="pc-t">Let her lead</div><div class="pc-d">Offer two choices so she feels in control</div></div>
+  <div class="pcard"><div class="pc-n">4</div><div class="pc-t">Remember</div><div class="pc-d">A one-page &ldquo;About Her&rdquo; profile, updated weekly</div></div>
+</div>
+<div class="viz-sub">An activity bank that bends to her world</div>
+<div class="chips">
+  <span class="chip">Letter treasure hunt</span><span class="chip">Playdough numbers</span><span class="chip">Hop-counting</span>
+  <span class="chip">Puppet stories</span><span class="chip">Sound I-spy</span><span class="chip">Draw her favourite</span>
+  <span class="chip">Sorting &amp; colours</span><span class="chip">Action songs</span>
+</div>
+<div class="callout-mini"><strong>The secret:</strong> a recurring mascot who &ldquo;visits&rdquo; each week, a tiny home &ldquo;mission&rdquo; between sessions, and connection over content. A child who adores the time will learn anything.</div>
+</div>
+<div class="deep">
+<div class="block reveal"><h3>Who you're actually teaching: the 4-year-old brain</h3>
+<p>Before any plan, picture the learner. A typical 4-year-old can focus on a task <em>an adult chose</em> for only about <strong>8-12 minutes</strong> (some sources say as little as 2-3 minutes for a directed task), though she'll happily lose herself far longer in something she picked. That single fact drives everything: you cannot run a 30-minute 'lesson.' You run <strong>3-5 short, varied bursts</strong>, switching activity every 5-10 minutes before her attention drifts.</p><p>At 4, learning happens through <strong>play, movement, stories, songs and repetition</strong> — not worksheets. This is the core of the UK's Early Years Foundation Stage (EYFS) and Montessori thinking alike: children learn best when they feel safe, loved, and free to follow their own curiosity. What's developmentally typical at 4 is a useful menu (not a checklist). The CDC's actual 4-year milestones are modest — <em>names a few colours</em>, <em>tells what comes next in a familiar story</em>, and <em>draws a person with three or more body parts</em> (the CDC defines a milestone as something ~75% of children can do by that age). Many 4-year-olds are also <em>beginning</em> to recognise letters and the sounds they make (in UK phonics the first set is <strong>SATPIN</strong> — s, a, t, p, i, n — chosen because the sounds are distinct and blend into real words; save look-alikes like b/d for later) and to count real objects toward 10 — though the CDC actually lists <em>counting to 10</em> and <em>copying some capital letters</em> nearer <strong>age 5</strong>. Add a <em>huge</em> imagination plus big, fast-changing feelings.</p>
+<ul class="ticks">
+<li>Focus on adult-set tasks: ~8-12 min max, often less — so vary every 5-10 min</li>
+<li>Learns through far more play, movement, story and song than formal instruction (EYFS blends play with light adult guidance)</li>
+<li>CDC milestones at 4: names a few colours, retells a familiar story, draws a person with 3+ body parts. Emerging: early letters/sounds (SATPIN), counting objects toward 10</li>
+<li>Emotionally intense and imaginative — lean into pretend, never into pressure</li>
+</ul>
+</div>
+<div class="block reveal"><h3>The once-a-week problem (and how to beat it)</h3>
+<p>Here is the hard truth Masi should know up front: <strong>30 minutes once a week is very little contact time, and young children forget fast between widely-spaced sessions.</strong> Spaced-repetition research shows children <em>can</em> retain across gaps — but only when material is genuinely revisited. With a 7-day gap and no reinforcement, most specific 'content' will leak away.</p><p>So flip the goal. Don't optimise for how much she <em>learns</em> in 30 minutes; optimise for how much she <em>loves it</em> and how much <strong>continuity</strong> carries across weeks. Three levers do the heavy lifting:</p><p>1. <strong>A recurring character or mascot.</strong> Invent a friend who 'comes' every week — a small puppet, a toy dinosaur named Pip, a felt star. The character sets the challenges, hides the letters, gets things wrong so she can correct him. He is the thread that makes week 6 feel connected to week 1, and gives her someone to <em>miss</em> between sessions.</p><p>2. <strong>A 'magic' ritual to open and close.</strong> The same little song, secret handshake, or 'magic word' every single time. Rituals create safety and signal 'special time,' and the predictability is exactly what a 4-year-old craves.</p><p>3. <strong>A tiny between-session 'mission.'</strong> End each week by giving her one playful job the parent can support — 'find 3 red things this week for Pip,' 'count the stairs every day,' 'draw your favourite dinosaur.' This is your spaced-repetition smuggled into family life, and it keeps you present in her week.</p><p>Prioritise <strong>consistency and emotional connection over volume of content.</strong> A child who adores her tutor will learn anything; a child who's bored or pushed will learn nothing.</p>
+<ul class="ticks">
+<li>Low frequency = low retention unless you build continuity deliberately</li>
+<li>Recurring mascot/character = the thread across weeks + something to miss</li>
+<li>Same open/close 'magic' ritual every time = safety + 'this is special'</li>
+<li>Weekly 'mission' for parents = spaced repetition disguised as family fun</li>
+<li>Connection beats content: a child who loves the time will learn anything</li>
+</ul>
+</div>
+<div class="block reveal"><h3>The personalisation engine: make it HER world</h3>
+<p>'Highly personalised' is the whole game, and it's simpler than it sounds: <strong>find her obsessions and theme everything around them.</strong> Montessori calls it 'follow the child.' In week one your only real job is discovery — what lights her up? Dinosaurs, princesses, space, diggers, cats, mermaids, a favourite colour? Watch what she reaches for, ask her, ask the parent.</p><p>Then every game wears that costume. Learning the letter S isn't 'letter S' — it's 'Ssss like a Snake' if she loves animals, or 'Sparkly Star S' if she loves space. Counting isn't counting — it's 'how many dinosaurs are stomping?' This costs you nothing and changes everything, because to her it stops being learning and becomes <em>her favourite thing</em>.</p><p>Let her <strong>lead and choose</strong>: offer two activities and let her pick ('Shall we do the treasure hunt or the playdough first?'). Choice gives her control and instantly raises engagement. <strong>Adjust pace</strong> to her energy — if she's flying, go faster; if she's flagging, switch to movement or story. And keep a simple <strong>'About Her' profile</strong> you update weekly: current obsessions, what made her giggle, what she nailed, what frustrated her, a new word she used. That one page is your personalisation memory between sessions.</p>
+<ul class="ticks">
+<li>Week 1 = discovery: find her current obsessions (animals/space/princesses/colour)</li>
+<li>Theme EVERY activity around them — same skill, her costume</li>
+<li>Offer choices ('this one or that one?') so she leads and feels in control</li>
+<li>Keep a one-page 'About Her' profile: obsessions, wins, giggles, new words — update weekly</li>
+</ul>
+</div>
+<div class="block reveal"><h3>The 30-minute session template</h3>
+<p>Here is a concrete, repeatable shape. The timings are a frame, not a cage — <strong>follow her energy</strong> and shorten anything the moment interest dips. Notice the deliberate rhythm: focus, then a body break, then focus again, then calm. Total: 30 minutes.</p>
+<ul class="ticks">
+<li>0-3 min — WELCOME RITUAL: same hello song / 'magic word' + the mascot 'arrives.' Settles her, signals special time.</li>
+<li>3-10 min — LETTERS &amp; SOUNDS GAME (~7 min): one playful phonics activity (letter treasure hunt, sound-matching) themed to her interest.</li>
+<li>10-15 min — MOVEMENT / BRAIN BREAK (~5 min): hop, dance, animal walks, 'freeze.' Resets attention so the next focus burst works.</li>
+<li>15-22 min — COUNTING &amp; NUMBERS GAME (~7 min): hands-on numeracy (playdough numbers, hop-counting, sorting her favourite toys).</li>
+<li>22-27 min — STORY (~5 min): a short book or made-up story tied to the theme, with the mascot — calms her down, builds language.</li>
+<li>27-30 min — CLOSING RITUAL (~3 min): goodbye song, choose a sticker for the chart, and the mascot gives this week's 'mission.' End on a HIGH.</li>
+</ul>
+</div>
+<div class="block reveal"><h3>The activity bank: fun, low-prep, infinitely personalisable</h3>
+<p>Rotate these so no two weeks feel identical (novelty holds attention), but keep enough repetition that skills actually stick. Every one of these takes near-zero prep and bends to her theme just by swapping the characters and words.</p><p>The trick for ALL of them: name the skill in her world. A 'letter hunt' becomes a 'dinosaur egg hunt'; 'playdough numbers' become 'rolling worms for the hungry cat to count.' Make materials <strong>colourful and tactile</strong> — big foam letters, glittery stickers, squishy dough, puppets she can hold.</p>
+<ul class="ticks">
+<li>LETTER TREASURE HUNT: hide foam/paper letters around the room; mascot 'lost' them. She finds each, says its sound. Theme: dino eggs, hidden jewels, lost stars.</li>
+<li>PLAYDOUGH NUMBERS/LETTERS: roll dough into the shape of a number or letter, then make that many objects. Tactile + builds fine motor.</li>
+<li>HOP-COUNTING: chalk/paper numbers on the floor; she hops and counts. Combines movement break WITH numeracy — efficient and joyful.</li>
+<li>PUPPET STORIES: the mascot tells a story but gets things 'wrong' ('Pip thinks 2+1=5!') so she corrects him — children love being the expert.</li>
+<li>SOUND I-SPY / RHYME GAMES: 'I spy something starting with sss' or 'what rhymes with cat?' Pure oral phonological awareness, no materials needed.</li>
+<li>DRAWING HER FAVOURITE THING: she draws her dinosaur/princess; you label it together (emergent writing + pencil grip + her interest).</li>
+<li>SORTING &amp; COLOURS: sort buttons/toys/pompoms by colour or count into groups — early maths through play with whatever's on hand.</li>
+<li>SONGS WITH ACTIONS: counting songs, alphabet songs, made-up jingles about the mascot — music + movement + repetition is a memory superpower at this age.</li>
+</ul>
+</div>
+<div class="block reveal"><h3>Measuring progress without ever 'testing'</h3>
+<p>Never quiz a 4-year-old — pressure kills the joy that makes her learn. Measure lightly and invisibly:</p><p>- <strong>Observation notes.</strong> Jot 2-3 lines after each session in the 'About Her' profile: what she could do, what she enjoyed, a word or skill that's new. Over a term, the pattern is your progress report.
+- <strong>A sticker chart.</strong> Doubles as motivation AND a visible record she's proud of. Pick a theme she loves (a rocket filling up, a dinosaur growing).
+- <strong>Photos.</strong> Snap her drawings/creations (with parent consent). A photo of week-1 vs week-10 scribble-writing shows growth better than any test.</p><p>Keep the <strong>parent in the loop</strong> every single week: a 60-second handover or a short message — what you did, one lovely thing she did, and this week's 'mission' so they can reinforce it. The parent is your between-session teaching assistant; treat them as a partner.</p>
+<ul class="ticks">
+<li>Observe, don't test — 2-3 written notes per session beat any quiz</li>
+<li>Sticker chart = motivation + visible progress she's proud of</li>
+<li>Keep dated photos of drawings/creations to see growth over weeks</li>
+<li>Weekly parent handover: what you did, one delightful moment, this week's mission</li>
+</ul>
+</div>
+<div class="block reveal"><h3>The golden rules (print these on the fridge)</h3>
+<p>Everything above rests on a handful of attitudes that matter more than any activity. If Masi internalises only these, she'll do brilliantly.</p>
+<ul class="ticks">
+<li>PRAISE THE EFFORT, not the child ('You worked so hard on that S!') — builds persistence over fear of getting it wrong.</li>
+<li>FOLLOW HER ENERGY: speed up, slow down, or switch the instant her attention shifts. Her engagement is the real curriculum.</li>
+<li>NEVER FORCE IT. If she won't, pivot to play or movement. A power struggle teaches her the lesson is a threat.</li>
+<li>END ON A HIGH every time — finish while she still wants more, so she counts down to next week.</li>
+<li>Keep it COLOURFUL and TACTILE: dough, puppets, foam letters, glitter, big movements. Hands and bodies, not screens and sheets.</li>
+<li>Repeat favourites. Children adore repetition — re-doing a loved game IS the spaced practice that makes it stick.</li>
+</ul>
+</div>
+</div>
+<div class="actions reveal"><h3>What to do next</h3><ol class="steplist">
+<li>Week 1 = pure discovery: play, observe, and ask the parent to find her current obsessions. Start the one-page 'About Her' profile.</li>
+<li>Invent a recurring mascot/character (puppet or favourite-toy figure) and a fixed open/close 'magic' ritual — same hello song and goodbye every week.</li>
+<li>Build your reusable 30-min template: ritual (3m) &gt; letters game (7m) &gt; movement break (5m) &gt; counting game (7m) &gt; themed story (5m) &gt; closing + sticker + mission (3m).</li>
+<li>Prep a small bank of low-prep, tactile materials themed to her interest: foam letters, playdough, sticker chart, puppet, colourful counters.</li>
+<li>Theme every single activity around her obsession and offer 2 choices each time so she leads and feels in control.</li>
+<li>End each session on a high, give a tiny 'mission' for the week, and do a 60-second handover so the parent reinforces it at home.</li>
+<li>Track progress lightly: jot 2-3 observation notes, add a sticker, photograph her creations — never test or quiz her.</li>
+<li>Each week, update the profile and adjust pace, theme, and difficulty to follow her energy and her newest interests.</li>
+</ol></div>
+<div class="caveats reveal"><h3>Worth keeping in mind</h3><ul>
+<li>Every 4-year-old is different. These milestones describe what most children can do at 4 — not a standard to push toward. Follow HER pace, never a checklist.</li>
+<li>30 minutes once a week is genuinely limited contact time; manage expectations with the parent. Real gains depend on between-session reinforcement at home, so the parent's buy-in is essential.</li>
+<li>Resist any pressure (from yourself or parents) to 'cover content' or formally test her — at this age that backfires, killing the intrinsic motivation that actually drives learning.</li>
+<li>Watch for over-tiredness, hunger, or off-days; a 4-year-old who won't engage usually isn't being difficult, she's done. Pivot to play or stop early rather than forcing.</li>
+<li>If the parent ever raises concerns about speech, hearing, social interaction, or development well below the CDC 4-year milestones, gently suggest they consult their GP or health visitor — that's outside a tutor's remit.</li>
+</ul></div>
+<details class="sources reveal"><summary>Sources &amp; further reading (12)</summary><ul>
+<li><a href="https://www.gov.uk/early-years-foundation-stage" target="_blank" rel="noopener">Early Years Foundation Stage — GOV.UK</a></li>
+<li><a href="https://assets.publishing.service.gov.uk/media/68c024cb8c6d992f23edd79c/Early_years_foundation_stage_statutory_framework_-_for_group_and_school-based_providers.pdf.pdf" target="_blank" rel="noopener">EYFS Statutory Framework (official PDF)</a></li>
+<li><a href="https://cobebe.co.uk/attention-span-by-age/" target="_blank" rel="noopener">Attention Span by Age: 4-Year-Olds Focus 10-15 min — CoBéBé</a></li>
+<li><a href="https://www.happiestbaby.com/blogs/toddler/attention-span" target="_blank" rel="noopener">An Age-by-Age Guide to Your Child's Attention Span — Happiest Baby</a></li>
+<li><a href="https://stayathomeeducator.com/letter-recognition-at-age-four/" target="_blank" rel="noopener">Letter Recognition at Age Four: Best Practices — Stay At Home Educator</a></li>
+<li><a href="https://pridereadingprogram.com/engaging-phonics-for-preschool/" target="_blank" rel="noopener">Engaging Phonics for Preschool: A Practical Guide — Pride Reading Program</a></li>
+<li><a href="https://www.cdc.gov/act-early/milestones/4-years.html" target="_blank" rel="noopener">Milestones by 4 Years — CDC Learn the Signs. Act Early.</a></li>
+<li><a href="https://montessoriccgroup.com/montessori-preschool/the-core-principles-of-montessori-education-explained/" target="_blank" rel="noopener">The Core Principles of Montessori Education Explained</a></li>
+<li><a href="https://montessoriccgroup.com/montessori-education/child-led-learning-a-key-principle-in-montessori-schools/" target="_blank" rel="noopener">Child-led learning, a key principle in Montessori schools</a></li>
+<li><a href="https://parentingscience.com/spaced-learning/" target="_blank" rel="noopener">Spaced learning: What's the best schedule for children's lessons? — Parenting Science</a></li>
+<li><a href="https://link.springer.com/article/10.3758/BF03197733" target="_blank" rel="noopener">The spacing effect in 4- to 9-year-old children — Memory &amp; Cognition</a></li>
+<li><a href="https://www.rasmussen.edu/degrees/education/blog/what-is-spaced-learning/" target="_blank" rel="noopener">What Is Spaced Learning? Repetition in the ECE Classroom — Rasmussen University</a></li>
+</ul></details>
+<div class="fcribbon reveal"><span class="fc-dot"></span>Independently fact-checked · verdict <strong>high</strong> · corrections folded in · <a href="notes/05-tutoring-a-4-year-old.md">read the full brief</a></div>
+</section><section class="method"><h2>How this was made</h2><p class="lede">Each note was answered by a fan-out of AI research agents, then handed to a separate, adversarial fact-checker. Where the checker found a claim that didn’t hold up, the correction was folded back into the text — a few of them are shown here, in the spirit of showing the working.</p><div class="flow"><div class="fnode"><div class="fn-n">Step 1</div><h4>Five deep-dives</h4><p>One web-grounded research agent per note, each running searches and pulling figures from primary sources.</p></div><div class="fnode"><div class="fn-n">Step 2</div><h4>Five fact-checks</h4><p>A separate skeptical agent re-checked every key claim, flagged what was off, and noted anything missing — especially the safety content in Sofia’s report.</p></div><div class="fnode"><div class="fn-n">Step 3</div><h4>Corrections folded in</h4><p>Verified corrections were merged into the briefs you’re reading. All five came back with an overall accuracy verdict of <strong>high</strong>.</p></div></div><table class="corrtable"><thead><tr><th>Note</th><th>First draft said</th><th>Corrected to</th></tr></thead><tbody><tr><td>Spanish</td><td class="was">Nubank is the largest neobank in the world</td><td class="now">…largest neobank outside Asia (WeBank is bigger by customers)</td></tr><tr><td>Spanish</td><td class="was">South America is &gt;80% of regional GDP</td><td class="now">~55–60% — the $7T total includes Mexico</td></tr><tr><td>Universities</td><td class="was">MSCA call ≈ €563m, opening 2026</td><td class="now">≈ €593m, already open; closes 24 Nov 2026</td></tr><tr><td>EU grants</td><td class="was">University spinout equity ~20–24%</td><td class="now">~5–10% software; UK average ~16% in 2024</td></tr><tr><td>Sofia</td><td class="was">A lump means energy was “absorbed by the scalp”</td><td class="now">Removed — not medically supported; size doesn’t signal severity</td></tr><tr><td>Tutoring</td><td class="was">Counting to 10–20 is a CDC milestone at 4</td><td class="now">CDC lists that nearer age 5; reframed as “emerging”</td></tr></tbody></table></section></main><footer><div class="wrap"><p class="sig">Thank you, Masi — for the advice, the questions, and for looking out for our family. <span>Every one of these was worth writing down.</span></p><p class="disc">This site is general information, gathered and checked with care — it is <strong>not</strong> professional medical, legal, or financial advice. Sofia’s report in particular is educational only: for any head injury, follow the red-flag guidance and seek medical care if there is any concern. Figures were current as of June 2026 and can change.</p><p class="made">Researched, fact-checked &amp; built with Claude Code (Opus 4.8, ultracode) · full briefs in the <a href="notes/">/notes</a> folder · made with love by Adam</p></div></footer><script>
+const prog=document.getElementById('progress');
+const onScroll=()=>{const h=document.documentElement;const sc=h.scrollTop/(h.scrollHeight-h.clientHeight);prog.style.width=(sc*100)+'%';};
+document.addEventListener('scroll',onScroll,{passive:true});onScroll();
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const links=[...document.querySelectorAll('nav.pills a')];
+const spy=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.toggle('active',l.dataset.target===e.target.id));}});},{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('section.note').forEach(s=>spy.observe(s));
+</script></body></html>
