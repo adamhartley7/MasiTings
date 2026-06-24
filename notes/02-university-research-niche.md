@@ -107,7 +107,7 @@ This strategy is powerful but not frictionless:
 
 ## What Adam should do next
 
-Given Adam appears UK-linked (the 'londonmetdubc' repo suggests a London / London Met / Dubai connection), the most actionable starting point is a **KTP or a small contract-research project** with a relevant department, brokered through that university's Business Engagement office. The KTP route is especially attractive because it is ~67% grant-funded for SMEs and gives you an embedded graduate plus an academic supervisor for 1-3 years — funded R&D *and* a credibility-building publication in one structure.
+The most actionable starting point is a **KTP or a small contract-research project** with a relevant department, brokered through that university's Business Engagement office. The KTP route is especially attractive because it is ~67% grant-funded for SMEs and gives you an embedded graduate plus an academic supervisor for 1-3 years — funded R&D *and* a credibility-building publication in one structure.
 
 If there is an EU angle, Horizon Europe's **Marie Skłodowska-Curie Actions (MSCA) Doctoral Networks and Industrial Doctorates** fund company-university PhD training across consortia — the 2026 call (HORIZON-MSCA-2026-DN-01, ~€593m) opened on 28 May 2026 and closes 24 November 2026 — it is open right now. These require a consortium of at least 3 organisations from 3 different EU/Associated countries, and the UK participates as an associated country.
 
@@ -133,7 +133,7 @@ If there is an EU angle, Horizon Europe's **Marie Skłodowska-Curie Actions (MSC
 - Timelines are slow: KTPs and studentships run for years, and university processes (ethics, contracting, teaching loads) move in academic time — keep collaborations off the critical path of near-term product launches.
 - IP negotiation is the most common reason collaborations stall — universities want to publish, companies want to appropriate; agree ownership, background-IP rights and publication terms in writing before work begins.
 - Full Economic Cost (FEC) overheads mean direct contract research can cost far more than raw researcher time, because you partly fund university estates and infrastructure; grant schemes exist partly to subsidise this.
-- Academic capacity is scarce (~28 UK SMEs per academic), so good researchers are in demand — being a clear, organised, easy partner materially affects how much attention you get.
+- Academic capacity is scarce (~22 SMEs per academic), so good researchers are in demand — being a clear, organised, easy partner materially affects how much attention you get.
 - Funding figures (e.g. ~67% KTP grant rate, ~£8,500/month, MSCA ~EUR 593m) are indicative and change between competition rounds — confirm current numbers on the official Innovate UK / UKRI / European Commission pages before relying on them.
 - This is general business and funding information, not legal advice — have any NDA, research agreement or IP arrangement reviewed by a qualified IP/contract lawyer before signing.
 
